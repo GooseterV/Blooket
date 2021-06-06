@@ -19,7 +19,10 @@ from blooketfunctions import guessjoins1, guessjoins2, guessjoins3, guessjoins4,
 import tfunc 
 from tfunc import bruteforce1,bruteforce2,bruteforce3,bruteforce4,bruteforce5,bruteforce6,bruteforce7,bruteforce8,bruteforce9
 import os
-hooklink = os.getenv("WEBHOOK")
+from dotenv import load_dotenv
+load_dotenv()
+
+hooklink = os.getenv('WEBHOOK_URL')
 
 # token = ""
 botname = 'kick me'

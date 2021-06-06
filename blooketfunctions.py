@@ -40,7 +40,7 @@ def guessjoins1():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -56,7 +56,7 @@ def guessjoins1():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -80,7 +80,7 @@ def guessjoins2():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -96,7 +96,7 @@ def guessjoins2():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -120,7 +120,7 @@ def guessjoins3():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -136,7 +136,7 @@ def guessjoins3():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -160,7 +160,7 @@ def guessjoins4():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -176,7 +176,7 @@ def guessjoins4():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -200,7 +200,7 @@ def guessjoins5():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -216,7 +216,7 @@ def guessjoins5():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -240,7 +240,7 @@ def guessjoins6():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -256,7 +256,7 @@ def guessjoins6():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -280,7 +280,7 @@ def guessjoins7():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -296,7 +296,7 @@ def guessjoins7():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -320,7 +320,7 @@ def guessjoins8():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -336,7 +336,7 @@ def guessjoins8():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -360,7 +360,7 @@ def guessjoins9():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -376,7 +376,7 @@ def guessjoins9():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -400,7 +400,7 @@ def guessjoins10():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -416,7 +416,7 @@ def guessjoins10():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -439,7 +439,7 @@ def guessjoins11():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -455,7 +455,7 @@ def guessjoins11():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -480,7 +480,7 @@ def guessjoins12():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -496,7 +496,7 @@ def guessjoins12():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -521,7 +521,7 @@ def guessjoins13():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -537,7 +537,7 @@ def guessjoins13():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -561,7 +561,7 @@ def guessjoins14():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -577,7 +577,7 @@ def guessjoins14():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 elif "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -601,7 +601,7 @@ def guessjoins15():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -617,7 +617,7 @@ def guessjoins15():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -641,7 +641,7 @@ def guessjoins16():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -657,7 +657,7 @@ def guessjoins16():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -682,7 +682,7 @@ def guessjoins17():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -698,7 +698,7 @@ def guessjoins17():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -722,7 +722,7 @@ def guessjoins18():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -738,7 +738,7 @@ def guessjoins18():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -762,7 +762,7 @@ def guessjoins19():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -778,7 +778,7 @@ def guessjoins19():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -802,7 +802,7 @@ def guessjoins20():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -818,7 +818,7 @@ def guessjoins20():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -842,7 +842,7 @@ def guessjoins21():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -858,7 +858,7 @@ def guessjoins21():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",

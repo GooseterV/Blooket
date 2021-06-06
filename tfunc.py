@@ -5,7 +5,7 @@ import time
 from time import sleep
 import os
 
-hooklink = os.getenv("WEBHOOK")
+
 
 botname = "kick me"
 
@@ -21,6 +21,18 @@ def bruteforce1():
                 requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
+                data = json.loads(resulted.text, resulted2.text)
+                webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
+                embed=discord.Embed(
+                    title=f"Game **{str(i)}**",
+                    url=f"https://www.blooket.com/play?id={i}",
+                    description=f"~ **Players** \n\n**Game Id** > [{str(i)}](https://www.blooket.com/play?id={str(i)}) \n**Set Id** > [{str(data['host']['set'])}](https://www.blooket.com/set/{str(data['host']['set'])}) \n**Game Mode** > {str(data['host']['s']['t'])} \n**Host** > [{str(data['host']['ho'])}](https://www.blooket.com/stats?name={str(data['host']['ho'])}) \n **Type** > {str(data['host']['s']['m'])} \n **Stage** > {str(data['host']['stg'])}",
+                    color=15277667,
+                    timestamp=currenttime
+                )
+                embed.set_author(name="Game Code Found!", icon_url="https://cdn.discordapp.com/attachments/847606880369246220/850812808664449057/blooket_icon.png", url=f"https://www.blooket.com/play?id={str(randomnum)}")
+                webhook.send(embed=embed)
+                
 def bruteforce2():
     for i in range(200000, 300000):
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(i)}", "name":f"kick me"})
@@ -33,6 +45,18 @@ def bruteforce2():
                 requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
+                data = json.loads(resulted.text, resulted2.text)
+                webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
+                embed=discord.Embed(
+                    title=f"Game **{str(i)}**",
+                    url=f"https://www.blooket.com/play?id={i}",
+                    description=f"~ **Players** \n\n**Game Id** > [{str(i)}](https://www.blooket.com/play?id={str(i)}) \n**Set Id** > [{str(data['host']['set'])}](https://www.blooket.com/set/{str(data['host']['set'])}) \n**Game Mode** > {str(data['host']['s']['t'])} \n**Host** > [{str(data['host']['ho'])}](https://www.blooket.com/stats?name={str(data['host']['ho'])}) \n **Type** > {str(data['host']['s']['m'])} \n **Stage** > {str(data['host']['stg'])}",
+                    color=15277667,
+                    timestamp=currenttime
+                )
+                embed.set_author(name="Game Code Found!", icon_url="https://cdn.discordapp.com/attachments/847606880369246220/850812808664449057/blooket_icon.png", url=f"https://www.blooket.com/play?id={str(randomnum)}")
+                webhook.send(embed=embed)
+
 def bruteforce3():
     for i in range(300000, 400000):
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(i)}", "name":f"kick me"})
@@ -45,6 +69,18 @@ def bruteforce3():
                 requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
+                data = json.loads(resulted.text, resulted2.text)
+                webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
+                embed=discord.Embed(
+                    title=f"Game **{str(i)}**",
+                    url=f"https://www.blooket.com/play?id={i}",
+                    description=f"~ **Players** \n\n**Game Id** > [{str(i)}](https://www.blooket.com/play?id={str(i)}) \n**Set Id** > [{str(data['host']['set'])}](https://www.blooket.com/set/{str(data['host']['set'])}) \n**Game Mode** > {str(data['host']['s']['t'])} \n**Host** > [{str(data['host']['ho'])}](https://www.blooket.com/stats?name={str(data['host']['ho'])}) \n **Type** > {str(data['host']['s']['m'])} \n **Stage** > {str(data['host']['stg'])}",
+                    color=15277667,
+                    timestamp=currenttime
+                )
+                embed.set_author(name="Game Code Found!", icon_url="https://cdn.discordapp.com/attachments/847606880369246220/850812808664449057/blooket_icon.png", url=f"https://www.blooket.com/play?id={str(randomnum)}")
+                webhook.send(embed=embed)
+
 def bruteforce4():
     for i in range(400000, 500000):
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(i)}", "name":f"kick me"})
@@ -57,6 +93,17 @@ def bruteforce4():
                 requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
+                data = json.loads(resulted.text, resulted2.text)
+                webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
+                embed=discord.Embed(
+                    title=f"Game **{str(i)}**",
+                    url=f"https://www.blooket.com/play?id={i}",
+                    description=f"~ **Players** \n\n**Game Id** > [{str(i)}](https://www.blooket.com/play?id={str(i)}) \n**Set Id** > [{str(data['host']['set'])}](https://www.blooket.com/set/{str(data['host']['set'])}) \n**Game Mode** > {str(data['host']['s']['t'])} \n**Host** > [{str(data['host']['ho'])}](https://www.blooket.com/stats?name={str(data['host']['ho'])}) \n **Type** > {str(data['host']['s']['m'])} \n **Stage** > {str(data['host']['stg'])}",
+                    color=15277667,
+                    timestamp=currenttime
+                )
+                embed.set_author(name="Game Code Found!", icon_url="https://cdn.discordapp.com/attachments/847606880369246220/850812808664449057/blooket_icon.png", url=f"https://www.blooket.com/play?id={str(randomnum)}")
+                webhook.send(embed=embed)
 def bruteforce5():
     for i in range(500000, 600000):
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(i)}", "name":f"kick me"})
@@ -69,6 +116,17 @@ def bruteforce5():
                 requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
+                data = json.loads(resulted.text, resulted2.text)
+                webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
+                embed=discord.Embed(
+                    title=f"Game **{str(i)}**",
+                    url=f"https://www.blooket.com/play?id={i}",
+                    description=f"~ **Players** \n\n**Game Id** > [{str(i)}](https://www.blooket.com/play?id={str(i)}) \n**Set Id** > [{str(data['host']['set'])}](https://www.blooket.com/set/{str(data['host']['set'])}) \n**Game Mode** > {str(data['host']['s']['t'])} \n**Host** > [{str(data['host']['ho'])}](https://www.blooket.com/stats?name={str(data['host']['ho'])}) \n **Type** > {str(data['host']['s']['m'])} \n **Stage** > {str(data['host']['stg'])}",
+                    color=15277667,
+                    timestamp=currenttime
+                )
+                embed.set_author(name="Game Code Found!", icon_url="https://cdn.discordapp.com/attachments/847606880369246220/850812808664449057/blooket_icon.png", url=f"https://www.blooket.com/play?id={str(randomnum)}")
+                webhook.send(embed=embed)
 def bruteforce6():
     for i in range(600000, 700000):
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(i)}", "name":f"kick me"})
@@ -81,6 +139,17 @@ def bruteforce6():
                 requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
+                data = json.loads(resulted.text, resulted2.text)
+                webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
+                embed=discord.Embed(
+                    title=f"Game **{str(i)}**",
+                    url=f"https://www.blooket.com/play?id={i}",
+                    description=f"~ **Players** \n\n**Game Id** > [{str(i)}](https://www.blooket.com/play?id={str(i)}) \n**Set Id** > [{str(data['host']['set'])}](https://www.blooket.com/set/{str(data['host']['set'])}) \n**Game Mode** > {str(data['host']['s']['t'])} \n**Host** > [{str(data['host']['ho'])}](https://www.blooket.com/stats?name={str(data['host']['ho'])}) \n **Type** > {str(data['host']['s']['m'])} \n **Stage** > {str(data['host']['stg'])}",
+                    color=15277667,
+                    timestamp=currenttime
+                )
+                embed.set_author(name="Game Code Found!", icon_url="https://cdn.discordapp.com/attachments/847606880369246220/850812808664449057/blooket_icon.png", url=f"https://www.blooket.com/play?id={str(randomnum)}")
+                webhook.send(embed=embed)
 def bruteforce7():
     for i in range(700000, 800000):
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(i)}", "name":f"kick me"})
@@ -93,6 +162,17 @@ def bruteforce7():
                 requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
+                data = json.loads(resulted.text, resulted2.text)
+                webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
+                embed=discord.Embed(
+                    title=f"Game **{str(i)}**",
+                    url=f"https://www.blooket.com/play?id={i}",
+                    description=f"~ **Players** \n\n**Game Id** > [{str(i)}](https://www.blooket.com/play?id={str(i)}) \n**Set Id** > [{str(data['host']['set'])}](https://www.blooket.com/set/{str(data['host']['set'])}) \n**Game Mode** > {str(data['host']['s']['t'])} \n**Host** > [{str(data['host']['ho'])}](https://www.blooket.com/stats?name={str(data['host']['ho'])}) \n **Type** > {str(data['host']['s']['m'])} \n **Stage** > {str(data['host']['stg'])}",
+                    color=15277667,
+                    timestamp=currenttime
+                )
+                embed.set_author(name="Game Code Found!", icon_url="https://cdn.discordapp.com/attachments/847606880369246220/850812808664449057/blooket_icon.png", url=f"https://www.blooket.com/play?id={str(randomnum)}")
+                webhook.send(embed=embed)
 def bruteforce8():
     for i in range(800000, 900000):
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(i)}", "name":f"kick me"})
@@ -105,6 +185,17 @@ def bruteforce8():
                 requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
+                data = json.loads(resulted.text, resulted2.text)
+                webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
+                embed=discord.Embed(
+                    title=f"Game **{str(i)}**",
+                    url=f"https://www.blooket.com/play?id={i}",
+                    description=f"~ **Players** \n\n**Game Id** > [{str(i)}](https://www.blooket.com/play?id={str(i)}) \n**Set Id** > [{str(data['host']['set'])}](https://www.blooket.com/set/{str(data['host']['set'])}) \n**Game Mode** > {str(data['host']['s']['t'])} \n**Host** > [{str(data['host']['ho'])}](https://www.blooket.com/stats?name={str(data['host']['ho'])}) \n **Type** > {str(data['host']['s']['m'])} \n **Stage** > {str(data['host']['stg'])}",
+                    color=15277667,
+                    timestamp=currenttime
+                )
+                embed.set_author(name="Game Code Found!", icon_url="https://cdn.discordapp.com/attachments/847606880369246220/850812808664449057/blooket_icon.png", url=f"https://www.blooket.com/play?id={str(randomnum)}")
+                webhook.send(embed=embed)
 def bruteforce9():
     for i in range(900000, 999999):
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(i)}", "name":f"kick me"})
@@ -117,6 +208,17 @@ def bruteforce9():
                 requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
+                data = json.loads(resulted.text, resulted2.text)
+                webhook = Webhook.from_url(f"{str(hooklink)}", adapter=RequestsWebhookAdapter())
+                embed=discord.Embed(
+                    title=f"Game **{str(i)}**",
+                    url=f"https://www.blooket.com/play?id={i}",
+                    description=f"~ **Players** \n\n**Game Id** > [{str(i)}](https://www.blooket.com/play?id={str(i)}) \n**Set Id** > [{str(data['host']['set'])}](https://www.blooket.com/set/{str(data['host']['set'])}) \n**Game Mode** > {str(data['host']['s']['t'])} \n**Host** > [{str(data['host']['ho'])}](https://www.blooket.com/stats?name={str(data['host']['ho'])}) \n **Type** > {str(data['host']['s']['m'])} \n **Stage** > {str(data['host']['stg'])}",
+                    color=15277667,
+                    timestamp=currenttime
+                )
+                embed.set_author(name="Game Code Found!", icon_url="https://cdn.discordapp.com/attachments/847606880369246220/850812808664449057/blooket_icon.png", url=f"https://www.blooket.com/play?id={str(randomnum)}")
+                webhook.send(embed=embed)
 
 
 if __name__=='__main__':
