@@ -33,7 +33,7 @@ def guessjoins1():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -73,7 +73,7 @@ def guessjoins2():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -113,7 +113,7 @@ def guessjoins3():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -153,7 +153,7 @@ def guessjoins4():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -193,7 +193,7 @@ def guessjoins5():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -233,7 +233,7 @@ def guessjoins6():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -273,7 +273,7 @@ def guessjoins7():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -313,7 +313,7 @@ def guessjoins8():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -353,7 +353,7 @@ def guessjoins9():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -393,7 +393,7 @@ def guessjoins10():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -432,7 +432,7 @@ def guessjoins11():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -473,7 +473,7 @@ def guessjoins12():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -514,7 +514,7 @@ def guessjoins13():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -554,7 +554,7 @@ def guessjoins14():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -594,7 +594,7 @@ def guessjoins15():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -634,7 +634,7 @@ def guessjoins16():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -675,7 +675,7 @@ def guessjoins17():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -715,7 +715,7 @@ def guessjoins18():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -755,7 +755,7 @@ def guessjoins19():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -795,7 +795,7 @@ def guessjoins20():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -835,7 +835,7 @@ def guessjoins21():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        #requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             

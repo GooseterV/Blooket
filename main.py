@@ -14,10 +14,10 @@ import datetime
 from threading import Thread
 from datetime import datetime
 from pytz import timezone
-import blooketfunctions
-from blooketfunctions import guessjoins1, guessjoins2, guessjoins3, guessjoins4, guessjoins5, guessjoins6, guessjoins7,guessjoins8,guessjoins9,guessjoins10,guessjoins11,guessjoins12,guessjoins13,guessjoins14,guessjoins15,guessjoins16,guessjoins17,guessjoins18,guessjoins19,guessjoins20,guessjoins21
-import tfunc 
-from tfunc import bruteforce1,bruteforce2,bruteforce3,bruteforce4,bruteforce5,bruteforce6,bruteforce7,bruteforce8,bruteforce9
+import rng
+from rng import guessjoins1, guessjoins2, guessjoins3, guessjoins4, guessjoins5, guessjoins6, guessjoins7,guessjoins8,guessjoins9,guessjoins10,guessjoins11,guessjoins12,guessjoins13,guessjoins14,guessjoins15,guessjoins16,guessjoins17,guessjoins18,guessjoins19,guessjoins20,guessjoins21
+import bruteforce 
+from bruteforce import bruteforce1,bruteforce2,bruteforce3,bruteforce4,bruteforce5,bruteforce6,bruteforce7,bruteforce8,bruteforce9
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -38,7 +38,7 @@ currenttime = datetime.now(tz)
      
 
 
-if __name__=='__main__':
+def start_threads():
     p1 = threading.Thread(target=guessjoins1)
     p2 = threading.Thread(target=guessjoins2)
     p3 = threading.Thread(target=guessjoins3)
@@ -88,3 +88,5 @@ if __name__=='__main__':
         #b2.start()
         #b3.start()
         #b4.start()
+
+start_threads()

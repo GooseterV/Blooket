@@ -18,7 +18,7 @@ def bruteforce1():
             
         else:
             if resulted.text != "Too many requests, please try again later.":
-                requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
+                #requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
                 data = json.loads(resulted.text, resulted2.text)
@@ -42,7 +42,7 @@ def bruteforce2():
             
         else:
             if resulted.text != "Too many requests, please try again later.":
-                requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
+                #requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
                 data = json.loads(resulted.text, resulted2.text)
@@ -66,7 +66,7 @@ def bruteforce3():
             
         else:
             if resulted.text != "Too many requests, please try again later.":
-                requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
+                #requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
                 data = json.loads(resulted.text, resulted2.text)
@@ -90,7 +90,7 @@ def bruteforce4():
             
         else:
             if resulted.text != "Too many requests, please try again later.":
-                requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
+                #requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
                 data = json.loads(resulted.text, resulted2.text)
@@ -113,7 +113,7 @@ def bruteforce5():
             
         else:
             if resulted.text != "Too many requests, please try again later.":
-                requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
+                #requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
                 data = json.loads(resulted.text, resulted2.text)
@@ -136,7 +136,7 @@ def bruteforce6():
             
         else:
             if resulted.text != "Too many requests, please try again later.":
-                requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
+                #requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
                 data = json.loads(resulted.text, resulted2.text)
@@ -159,7 +159,7 @@ def bruteforce7():
             
         else:
             if resulted.text != "Too many requests, please try again later.":
-                requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
+                #requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
                 data = json.loads(resulted.text, resulted2.text)
@@ -182,7 +182,7 @@ def bruteforce8():
             
         else:
             if resulted.text != "Too many requests, please try again later.":
-                requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
+                #requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
                 data = json.loads(resulted.text, resulted2.text)
@@ -205,7 +205,7 @@ def bruteforce9():
             
         else:
             if resulted.text != "Too many requests, please try again later.":
-                requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
+                #requests.delete(f"https://api.blooket.com/api/firebase/client?id={i}&name={botname}")
                 print(resulted.text)
                 print(resulted2.text)
                 data = json.loads(resulted.text, resulted2.text)
