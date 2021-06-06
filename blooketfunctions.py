@@ -13,6 +13,8 @@ import threading
 import datetime
 from datetime import datetime
 from pytz import timezone
+from dotenv import load_dotenv
+load_dotenv()
 
 hooklink = os.getenv("WEBHOOK_URL")
 
