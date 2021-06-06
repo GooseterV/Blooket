@@ -14,7 +14,7 @@ import datetime
 from datetime import datetime
 from pytz import timezone
 
-hooklink = os.getenv("WEBHOOK")
+hooklink = os.getenv("WEBHOOK_URL")
 
 # token = ""
 botname = 'kick me'
