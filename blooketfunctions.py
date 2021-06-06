@@ -14,9 +14,10 @@ import datetime
 from datetime import datetime
 from pytz import timezone
 
+hooklink = os.getenv("WEBHOOK")
 
 # token = ""
-botname = 'goosey uwu'
+botname = 'kick me'
 y = True
 v = '\\' 
 x = v[-1]
@@ -30,7 +31,7 @@ def guessjoins1():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -39,7 +40,7 @@ def guessjoins1():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -55,7 +56,7 @@ def guessjoins1():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -70,7 +71,7 @@ def guessjoins2():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -79,7 +80,7 @@ def guessjoins2():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -95,7 +96,7 @@ def guessjoins2():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -110,7 +111,7 @@ def guessjoins3():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -119,7 +120,7 @@ def guessjoins3():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -135,7 +136,7 @@ def guessjoins3():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -150,7 +151,7 @@ def guessjoins4():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -159,7 +160,7 @@ def guessjoins4():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -175,7 +176,7 @@ def guessjoins4():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -190,7 +191,7 @@ def guessjoins5():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -199,7 +200,7 @@ def guessjoins5():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -215,7 +216,7 @@ def guessjoins5():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -230,7 +231,7 @@ def guessjoins6():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -239,7 +240,7 @@ def guessjoins6():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -255,7 +256,7 @@ def guessjoins6():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -270,7 +271,7 @@ def guessjoins7():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -279,7 +280,7 @@ def guessjoins7():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -295,7 +296,7 @@ def guessjoins7():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -310,7 +311,7 @@ def guessjoins8():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -319,7 +320,7 @@ def guessjoins8():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -335,7 +336,7 @@ def guessjoins8():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -350,7 +351,7 @@ def guessjoins9():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -359,7 +360,7 @@ def guessjoins9():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -375,7 +376,7 @@ def guessjoins9():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -390,7 +391,7 @@ def guessjoins10():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -399,7 +400,7 @@ def guessjoins10():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -415,7 +416,7 @@ def guessjoins10():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -429,7 +430,7 @@ def guessjoins11():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -438,7 +439,7 @@ def guessjoins11():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -454,7 +455,7 @@ def guessjoins11():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -470,7 +471,7 @@ def guessjoins12():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -479,7 +480,7 @@ def guessjoins12():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -495,7 +496,7 @@ def guessjoins12():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -511,7 +512,7 @@ def guessjoins13():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -520,7 +521,7 @@ def guessjoins13():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -536,7 +537,7 @@ def guessjoins13():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -551,7 +552,7 @@ def guessjoins14():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -560,7 +561,7 @@ def guessjoins14():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -576,7 +577,7 @@ def guessjoins14():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 elif "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -591,7 +592,7 @@ def guessjoins15():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -600,7 +601,7 @@ def guessjoins15():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -616,7 +617,7 @@ def guessjoins15():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -631,7 +632,7 @@ def guessjoins16():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -640,7 +641,7 @@ def guessjoins16():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -656,7 +657,7 @@ def guessjoins16():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -672,7 +673,7 @@ def guessjoins17():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -681,7 +682,7 @@ def guessjoins17():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -697,7 +698,7 @@ def guessjoins17():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -712,7 +713,7 @@ def guessjoins18():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -721,7 +722,7 @@ def guessjoins18():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -737,7 +738,7 @@ def guessjoins18():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -752,7 +753,7 @@ def guessjoins19():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -761,7 +762,7 @@ def guessjoins19():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -777,7 +778,7 @@ def guessjoins19():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -792,7 +793,7 @@ def guessjoins20():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -801,7 +802,7 @@ def guessjoins20():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -817,7 +818,7 @@ def guessjoins20():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -832,7 +833,7 @@ def guessjoins21():
     while y == True:
         randomnum = random.randint(100000, 999999)
         resulted = requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(i)}"})
-        # requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
+        requests.delete(f"https://api.blooket.com/api/firebase/client?id={randomnum}&name={botname+'-'+str(i)}")
         if resulted.text == '{"success":false,"msg":"no game"}' or resulted.text == "{'success': False, 'msg': 'late'}" or resulted.text == '{"success":false,"msg":"late"}':
             print(str(randomnum) + " - Failed: Not a valid game code.")
             
@@ -841,7 +842,7 @@ def guessjoins21():
                 print(resulted.text)
                 data = json.loads(resulted.text)
                 if "'c':{" in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",
@@ -857,7 +858,7 @@ def guessjoins21():
                         # requests.put("https://api.blooket.com/api/firebase/join", headers={"Referer":"https://www.blooket.com/"}, data={"id":f"{str(randomnum)}", "name":f"{botname+'-'+str(ie)}"})
                     # y = False
                 if "'c':{" not in str(data):
-                    webhook = Webhook.from_url("https://ptb.discord.com/api/webhooks/850528779931353098/KXfXf4KfpirPuco6cUDxO_GVK5OTq-AEip2W8Pwj-gmq_SORSYS_n69XBuP8HYBVA8Tw", adapter=RequestsWebhookAdapter())
+                    webhook = Webhook.from_url(hooklink, adapter=RequestsWebhookAdapter())
                     embed=discord.Embed(
                         title=f"Game **{str(randomnum)}**",
                         url=f"https://www.blooket.com/play?id={randomnum}",

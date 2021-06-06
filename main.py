@@ -18,9 +18,11 @@ import blooketfunctions
 from blooketfunctions import guessjoins1, guessjoins2, guessjoins3, guessjoins4, guessjoins5, guessjoins6, guessjoins7,guessjoins8,guessjoins9,guessjoins10,guessjoins11,guessjoins12,guessjoins13,guessjoins14,guessjoins15,guessjoins16,guessjoins17,guessjoins18,guessjoins19,guessjoins20,guessjoins21
 import tfunc 
 from tfunc import bruteforce1,bruteforce2,bruteforce3,bruteforce4,bruteforce5,bruteforce6,bruteforce7,bruteforce8,bruteforce9
+import os
+hooklink = os.getenv("WEBHOOK")
 
 # token = ""
-botname = 'unbanned 😎'
+botname = 'kick me'
 y = True
 v = '\\' 
 x = v[-1]
@@ -30,8 +32,7 @@ currenttime = datetime.now(tz)
 
 
 
-
-        
+     
 
 
 if __name__=='__main__':
@@ -76,4 +77,11 @@ if __name__=='__main__':
         a7.start()
         a8.start()
         a9.start()
-        
+        #b1= threading.Thread(target=creategame1)
+        #b2 = threading.Thread(target=creategame2)
+        #b3 = threading.Thread(target=creategame3)
+        #b4 = threading.Thread(target=creategame4)
+        #b1.start()
+        #b2.start()
+        #b3.start()
+        #b4.start()
