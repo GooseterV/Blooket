@@ -20,7 +20,7 @@ import tfunc
 from tfunc import bruteforce1,bruteforce2,bruteforce3,bruteforce4,bruteforce5,bruteforce6,bruteforce7,bruteforce8,bruteforce9
 
 # token = ""
-botname = 'ratelimit me'
+botname = 'unbanned 😎'
 y = True
 v = '\\' 
 x = v[-1]
