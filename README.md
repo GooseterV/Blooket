@@ -6,7 +6,7 @@
 
 Open console (ctrl + shift + j) and paste the following:
 ```js
-fetch("https://raw.githubusercontent.com/GooseterV/Blooket/main/global/blookViewer.js").then((res) => res.text().then((t) => eval(t)))
+fetch("https://raw.githubusercontent.com/GooseterV/Blooket/master/js/blookViewer.js").then((res) => res.text().then((t) => eval(t)))
 ```
 
 # blookInfoExtender.js
@@ -16,7 +16,7 @@ fetch("https://raw.githubusercontent.com/GooseterV/Blooket/main/global/blookView
 Open console (ctrl + shift + j) and paste the following:
 
 ```js
-fetch("https://raw.githubusercontent.com/GooseterV/Blooket/main/global/blookInfoExtender.js").then((res) => res.text().then((t) => eval(t)))
+fetch("https://raw.githubusercontent.com/GooseterV/Blooket/master/js/blookInfoExtender.js").then((res) => res.text().then((t) => eval(t)))
 ```
 
 # spoofer.js
@@ -29,5 +29,5 @@ fetch("https://raw.githubusercontent.com/GooseterV/Blooket/main/global/blookInfo
 Open console (ctrl + shift + j) and paste the following:
 
 ```js
-fetch("https://raw.githubusercontent.com/GooseterV/Blooket/main/global/spoofer.js").then((res) => res.text().then((t) => eval(t)))
+fetch("https://raw.githubusercontent.com/GooseterV/Blooket/master/js/spoofer.js").then((res) => res.text().then((t) => eval(t)))
 ```
