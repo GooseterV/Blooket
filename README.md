@@ -4,12 +4,14 @@
 ### See other people's blooks in the form of your own blook page
 </br>
 ```js
+
 Click on  
 - blookViewer.js
 - the two papers icon
 Go to blooket blooks page
 - open up console (ctrl + shift + j)
 - paste code into console
+
 ```
 
 # blookInfoExtender.js
