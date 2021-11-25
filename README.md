@@ -3,7 +3,7 @@
 # blookViewer.js
 ### See other people's blooks in the form of your own blook page
 </br>
-```txt
+```js
 Click on  
 - blookViewer.js
 - the two papers icon
