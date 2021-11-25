@@ -57,6 +57,8 @@ Open up app
 
 - Open up safari, copy the code from the js file, and head to blooket
 - Go to correct page for script
+- Tap on the share icon in the top right corner, scroll until you see your shortcut, and run it
+![C21BCA66-6269-4E6C-82E4-CE4DD131D718](https://user-images.githubusercontent.com/82774618/143508281-9d6aa128-85c5-4b18-8536-31130bff9c37.jpeg)
 
 
 
