@@ -53,7 +53,7 @@ Open up app
 ![11FABDE7-A552-4DED-8BC2-F0C31805BC36](https://user-images.githubusercontent.com/82774618/143508048-a5b887ff-9c15-47d8-bd50-2a5fb14a078a.jpeg)
 
 - Replace contents with below
-![C1AF68F3-44D3-4777-B978-B720CD6B1926](https://user-images.githubusercontent.com/82774618/143508142-2557dea6-2578-4a86-8309-ddcc021ea7a3.jpeg)
+![4F0FF222-A6A4-4E4D-A748-366C9B7891D3](https://user-images.githubusercontent.com/82774618/143507710-83a31fd8-d3f7-495e-b5a6-c98832c9d085.jpeg)
 
 - Open up safari, copy the code from the js file, and head to blooket
 - Go to correct page for script
@@ -62,6 +62,5 @@ Open up app
 
 
 
-### End Result
-![4F0FF222-A6A4-4E4D-A748-366C9B7891D3](https://user-images.githubusercontent.com/82774618/143507710-83a31fd8-d3f7-495e-b5a6-c98832c9d085.jpeg)
+
 ## Bookmarklets 
