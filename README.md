@@ -17,7 +17,7 @@ fetch(atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0dvb3NldGVyVi9CbG9va2V0
 Open console (ctrl + shift + j) and paste the following:
 
 ```js
-fetch("https://raw.githubusercontent.com/GooseterV/Blooket/master/js/blookInfoExtender.js").then((res) => res.text().then((t) => eval(t)))
+fetch(atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0dvb3NldGVyVi9CbG9va2V0L21hc3Rlci9qcy9ibG9va0luZm9FeHRlbmRlci5qcw==')).then((res) => res.text().then((t) => eval(t)))
 ```
 
 # spoofer.js
@@ -30,5 +30,5 @@ fetch("https://raw.githubusercontent.com/GooseterV/Blooket/master/js/blookInfoEx
 Open console (ctrl + shift + j) and paste the following:
 
 ```js
-fetch("https://raw.githubusercontent.com/GooseterV/Blooket/master/js/spoofer.js").then((res) => res.text().then((t) => eval(t)))
+fetch(atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0dvb3NldGVyVi9CbG9va2V0L21hc3Rlci9qcy9zcG9vZmVyLmpz')).then((res) => res.text().then((t) => eval(t)))
 ```
