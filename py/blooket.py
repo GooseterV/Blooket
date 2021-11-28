@@ -20,10 +20,10 @@ class BlooketErrors:
         pass
 
 def getBlooks(playerName:str, token):
-    r = requests.get(f"https://api.blooket.com/api/users/blooks?name={playerName}", headers={"authorization":token})
-    print(r.text)
+    r = requests.get(f"https://api.blooket.com/api/users?name={playerName}", headers={"authorization":token})
+    
     try:
-        rj = json.loads(r.text)
+        rj = json.loads(r.text)["unlocks"]
         bj = {
             "playerName":playerName,
             "blooks":rj
