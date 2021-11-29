@@ -32,7 +32,7 @@ Go to blooket blooks page
 </br>
 
 Click on  `js`
-- spoofer.js
+- *script*.js
 - copy button (two papers icon)
 Go to blooket blooks page
 - open up console (ctrl + shift + j)
@@ -61,7 +61,7 @@ Open up app
 - Tap on the share icon in the top right corner, scroll until you see your shortcut, and run it
 ![C21BCA66-6269-4E6C-82E4-CE4DD131D718](https://user-images.githubusercontent.com/82774618/143508281-9d6aa128-85c5-4b18-8536-31130bff9c37.jpeg)
 
-
+### Note! This will work with all scripts and other javascript, so don't delete the shortcut when you're done.
 
 
 ## Bookmarklets 
