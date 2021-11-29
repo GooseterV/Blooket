@@ -49,7 +49,7 @@ Open up app
 - Change the 'Accepts' box to only safari web pages
 ![3E7BE1A6-5EC5-45DC-8FA3-C163330980DA](https://user-images.githubusercontent.com/82774618/143507962-1fd8ae2b-81dd-4dd6-8936-09c3aa1361f9.jpeg)
 
-- Go into rhe left box and tap on 'Web', scroll until you find 'Run JavaScript On WebPage'
+- Go into the left box and tap on 'Web', scroll until you find 'Run JavaScript On WebPage'
 - Drag out box
 ![11FABDE7-A552-4DED-8BC2-F0C31805BC36](https://user-images.githubusercontent.com/82774618/143508048-a5b887ff-9c15-47d8-bd50-2a5fb14a078a.jpeg)
 
