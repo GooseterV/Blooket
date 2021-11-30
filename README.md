@@ -9,7 +9,6 @@ Open console (ctrl + shift + j) and paste the following:
 
 ```js
 fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMjc5MTQvYmxvb2tWaWV3ZXIuanM=')).then((res) => res.text().then((t) => eval(t)))
-
 ```
 
 
@@ -17,12 +16,11 @@ fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2
 ### Show extended info on all of the blooks
 </br>
 
-Click on  `js`
-- blookInfoExtender.js
-- copy button (two papers icon)
-Go to blooket blooks page
-- open up console (ctrl + shift + j)
-- paste code into console
+Open console (ctrl + shift + j) and paste the following:
+
+```js
+fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMzA1NzIvc3Bvb2Zlci5qcw==')).then((res) => res.text().then((t) => eval(t)))
+```
 
 # spoofer.js
 ## Blooks
