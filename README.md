@@ -21,10 +21,10 @@ fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2
 ```
 
 # spoofer.js
-## Blooks
-### Show all of the blooks in your blook page 
-## Market
-### Adds a custom box to the marketpage
+### **Blooks**
+#### Show all of the blooks in your blook page 
+### **Market**
+#### Adds a custom box to the marketpage
 </br>
 
 Open console (ctrl + shift + j) and paste the following:
