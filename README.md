@@ -61,3 +61,16 @@ Open up app
 
 
 ## Bookmarklets 
+- Go to any page and create a new bookmark with the favorite icon (star)
+- Replace bookmark url with `javascript:`
+- Paste fetch script from above 
+### When you finish it should look something like:
+*`javascript:fetch(atob('base64string')).then((r) => r.text().then(eval))`*
+<br>
+To run it, head to blooket and click the bookmark
+
+
+
+## Issues & Bugs
+- Check for any mistakes you may have made 
+- If you are certain it is a problem with the code, go to the [**`Issues`**](https://github.com/GooseterV/Blooket/issues/new) tab of the repo and create a new issue
