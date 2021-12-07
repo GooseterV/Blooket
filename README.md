@@ -8,7 +8,7 @@
 Open console (ctrl + shift + j) and paste the following:
 
 ```js
-fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMzQxMjEvYmxvb2tWaWV3ZXIuanM=')).then((r) => r.text().then(eval))
+fetch(atob('aHR0cHM6Ly9ibG9va2V0LTM0NGM5LWRlZmF1bHQtcnRkYi5maXJlYmFzZWlvLmNvbS9ibG9va1ZpZXdlci5qc29u')).then((r) => r.text().then((t)=>eval(JSON.parse(t))))
 ```
 
 
@@ -17,7 +17,7 @@ fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2
 </br>
 
 ```js
-fetch(atob('aHR0cHM6Ly9maXJlYmFzZXN0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vdjAvYi9ibG9va2V0LTM0NGM5LmFwcHNwb3QuY29tL28vYmxvb2tJbmZvRXh0ZW5kZXIuanM/YWx0PW1lZGlh')).then((r) => r.text().then(eval))
+fetch(atob('aHR0cHM6Ly9ibG9va2V0LTM0NGM5LWRlZmF1bHQtcnRkYi5maXJlYmFzZWlvLmNvbS9ibG9va0luZm9FeHRlbmRlci5qc29u')).then((r) => r.text().then((t)=>eval(JSON.parse(t))))
 ```
 
 # spoofer.js
