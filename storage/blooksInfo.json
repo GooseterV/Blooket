@@ -665,6 +665,21 @@
 				"Rarity": "Mystical",
 				"Box": "PAC Event",
 				"dropRate": "Awarded"
+			},
+			"Master Elf": {
+				"Rarity":"Chroma",
+				"Box":"POP Event",
+				"dropRate":"Awarded"
+			},
+			"Agent Owl": {
+				"Rarity":"Chroma",
+				"Box":"POP Event",
+				"dropRate":"Awarded"
+			},
+			"Phantom King": {
+				"Rarity":"Mystical",
+				"Box":"POP Event",
+				"dropRate":"Awarded"
 			}
 		},
 		"Sell Prices": {
