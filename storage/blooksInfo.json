@@ -683,6 +683,7 @@
 			}
 		},
 		"Sell Prices": {
+			"Common":"Unsellable",
 			"Uncommon": 5,
 			"Rare": 20,
 			"Epic": 75,
