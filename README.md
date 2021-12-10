@@ -48,12 +48,17 @@ Open up app
 ![11FABDE7-A552-4DED-8BC2-F0C31805BC36](https://user-images.githubusercontent.com/82774618/143508048-a5b887ff-9c15-47d8-bd50-2a5fb14a078a.jpeg)
 
 - Replace contents with below
+<<<<<<< HEAD
 ```js
 // clipboard variable here
 window.setTimeout(alert, 1, 'Javascript Input Executed.');
 completion("Done.");
 ```
 ![D38FCE82-5660-42E6-90DC-2E152ADDB7ED](https://user-images.githubusercontent.com/82774618/145502962-9b43a684-1552-48f5-bf16-2cb75b001c04.jpeg)
+=======
+![D38FCE82-5660-42E6-90DC-2E152ADDB7ED](https://user-images.githubusercontent.com/82774618/145502962-9b43a684-1552-48f5-bf16-2cb75b001c04.jpeg)
+
+>>>>>>> 9a70c89e1bedee6fb3950615596200871ac33298
 
 - Open up safari, copy the code from the js file, and head to blooket 
 - Go to correct page for script
