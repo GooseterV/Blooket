@@ -823,7 +823,10 @@
 			"Spooky Ghost": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/halloween/spookyGhost.svg",
 			"Frost Wreath": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/winterHoliday/frostWreath.svg",
 			"Tropical Globe": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/winterHoliday/tropicalGlobe.svg",
-			"Tim the Alien": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/space/timTheAlien.svg"
+			"Tim the Alien": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/space/timTheAlien.svg",
+			"Master Elf":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/masterElf.svg",
+			"Agent Owl":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/agentOwl.svg",
+			"Phantom King":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/phantomKing.svg"
 		},
 		"Colors": {
 			"Common": "rgb(255, 255, 255)",
@@ -832,6 +835,6 @@
 			"Epic": "rgb(190, 0, 0)",
 			"Legendary": "rgb(255, 145, 15)",
 			"Chroma": "rgb(0, 204, 255)",
-			"Mystical": "#a335ee"
+			"Mystical": "rgb(163, 53, 238)"
 		}
 	}
