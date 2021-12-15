@@ -96,7 +96,7 @@
 				"Box":"Forest",
 				"dropRate":"Not dropped."
 			},
-			"Racoon":{
+			"Raccoon":{
 				"Rarity":"Common",
 				"Box":"Forest",
 				"dropRate":"Not dropped."
@@ -683,6 +683,7 @@
 			}
 		},
 		"Sell Prices": {
+			"Common":"Unsellable",
 			"Uncommon": 5,
 			"Rare": 20,
 			"Epic": 75,
