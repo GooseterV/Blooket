@@ -74,7 +74,7 @@ To run it, head to blooket and click the bookmark
 
 ## python section
 - install python
-- create a new folder and copy `py/blooket.py` into it
+- create a new folder and copy `py/blooket.py` into it (only the file)
 - create a new python file and type in:
 ```py
 import blooket
