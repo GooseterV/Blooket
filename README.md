@@ -72,6 +72,32 @@ completion("Done.");
 <br>
 To run it, head to blooket and click the bookmark
 
+## python section
+- install python
+- create a new folder and copy `py/blooket.py` into it
+- create a new python file and type in:
+```py
+import blooket
+token = "JWT yourtoken" # localStorage.token
+name = "Yourblooketname" # localStorage.washere
+```
+- to see someone's blooks and calculate the total value of their blooks you can use this code:
+```py
+import blooket
+import json
+name = "playername"
+token = "localStorage.token (your token)"
+print(blooket.formatBlookString(name, token))
+blooks = blooket.getBlooks(name, token)
+t = 0
+for blook in blooks['blooks'].keys():
+    rarity = json.loads(open("storage/blooksInfo.json", "r").read())["Info"]["Blooks"][blook]["Rarity"]
+    blookPrice = json.loads(open("storage/blooksInfo.json", "r").read())["Info"]["Sell Prices"][rarity]
+    t += blookPrice*blooks['blooks'][blook]
+
+print(f"   Total value of {name}'s blooks: {t}\n")
+```
+
 
 
 ## Issues & Bugs
