@@ -5,31 +5,37 @@
 ### See other people's blooks in the form of your own blook page
 </br>
 
-Open console (ctrl + shift + j) and paste the following:
+Click on  `js`
+- blookViewer.js
+- copy button (two papers icon)
+Go to blooket blooks page
+- open up console (ctrl + shift + j)
+- paste code into console
 
-```js
-fetch(atob('aHR0cHM6Ly9ibG9va2V0LTM0NGM5LWRlZmF1bHQtcnRkYi5maXJlYmFzZWlvLmNvbS9ibG9va1ZpZXdlci5qc29u')).then((r) => r.text().then((t)=>eval(JSON.parse(t))))
-```
 
 
 # blookInfoExtender.js
 ### Show extended info on all of the blooks
 </br>
 
-```js
-fetch(atob('aHR0cHM6Ly9ibG9va2V0LTM0NGM5LWRlZmF1bHQtcnRkYi5maXJlYmFzZWlvLmNvbS9ibG9va0luZm9FeHRlbmRlci5qc29u')).then((r) => r.text().then((t)=>eval(JSON.parse(t))))
-```
+Click on  `js`
+- blookInfoExtender.js
+- copy button (two papers icon)
+Go to blooket blooks page
+- open up console (ctrl + shift + j)
+- paste code into console
 
 # spoofer.js
 ### Show all of the blooks in your blook page along with custom ones as a special rarity
 
 </br>
 
-Open console (ctrl + shift + j) and paste the following:
-
-```js
-fetch(atob('aHR0cHM6Ly9ibG9va2V0LTM0NGM5LWRlZmF1bHQtcnRkYi5maXJlYmFzZWlvLmNvbS9zcG9vZmVyLmpzb24=')).then((r) => r.text().then((t)=>eval(JSON.parse(t))))
-```
+Click on  `js`
+- spoofer.js
+- copy button (two papers icon)
+Go to blooket blooks page
+- open up console (ctrl + shift + j)
+- paste code into console
 
 ## IOS Mobile Devices
 Install the shortcuts app through app store (if not already built into device)
@@ -68,7 +74,7 @@ completion("Done.");
 - Replace bookmark url with `javascript:`
 - Paste fetch script from above 
 ### When you finish it should look something like:
-*`javascript:fetch(atob('base64string')).then((r) => r.text().then(eval))`*
+*`javascript:(obfuscatedcodeblahblahblah)`*
 <br>
 To run it, head to blooket and click the bookmark
 
