@@ -33,7 +33,7 @@ def getBlooks(playerName:str, token):
         raise BlooketErrors.InvalidName(playerName)
 
 def formatBlookString(playerName, token):
-    with open("wrapper/Blooks.json", "r") as blookFile:
+    with open("storage/blooksInfo.json", "r") as blookFile:
         blookData = json.loads(blookFile.read())
     blookString = f"\033[1m{playerName}'s Blooks\033[0m\n   "
     userBlooks = getBlooks(playerName, token)
@@ -46,7 +46,7 @@ def formatBlookString(playerName, token):
         "Mystical":"\033[38;2;163;53;238m" #rgb(163, 53, 238)
     }
     for (blookName, blookAmount) in zip(userBlooks["blooks"].keys(), userBlooks["blooks"].values()):
-        blookColor = blookRarityColors[blookData["Blooks"][blookName]["Rarity"]]
+        blookColor = blookRarityColors[blookData["Info"]["Blooks"][blookName]["Rarity"]]
         blookString += f"{blookColor}{blookName}: {blookAmount:.2f}\033[0m\n   "
     return blookString
 

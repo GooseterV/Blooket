@@ -2,3 +2,5 @@ js/unobfuscated/*
 js/unobfuscated
 local
 local/*
+b.py
+__pycache__
