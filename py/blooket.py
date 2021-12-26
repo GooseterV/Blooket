@@ -90,4 +90,9 @@ def openBox(box:str, token:str) -> dict:
 	try: 
 		j = res.json()
 	except Exception as e:
-		raise BlooketErrors.FailedAuth()
+		if res.status_code == 404:
+			raise BlooketErrors.InvalidName()
+		elif res.status_code == 401:
+			raise BlooketErrors.FailedAuth()
+		else:
+			raise BlooketErrors.UnknownError()
