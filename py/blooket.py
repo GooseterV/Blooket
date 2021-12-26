@@ -22,7 +22,12 @@ class BlooketErrors:
 			super().__init__(self.message)
 		pass
 	class UnknownError(Exception):
-		def __init__(self, message="Something went wrong!"):
+		def __init__(self, message="Something went wrong, and we don't know what it was!"):
+			self.message = message
+			super().__init__(self.message)
+		pass
+	class BadRequest(Exception):
+		def __init__(self, message="Something went wrong."):
 			self.message = message
 			super().__init__(self.message)
 		pass
