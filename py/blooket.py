@@ -38,7 +38,14 @@ def getBlooks(playerName:str, token):
 		}
 		return bj
 	except Exception as e:
-		raise BlooketErrors.InvalidName(playerName)
+		if r.status_code == 404:
+			raise BlooketErrors.InvalidName(playerName)
+		elif r.status_code == 401:
+			raise BlooketErrors.FailedAuth()
+		elif r.status_code == 400:
+			raise BlooketErrors.BadRequest()
+		else:
+			raise BlooketErrors.UnknownError()
 
 def formatBlookString(playerName, token):
 	with open("storage/blooksInfo.json", "r") as blookFile:
@@ -68,6 +75,8 @@ def getInfo(playerName:str, token) -> dict:
 			raise BlooketErrors.InvalidName(playerName)
 		elif userInfo.status_code == 401:
 			raise BlooketErrors.FailedAuth()
+		elif userInfo.status_code == 400:
+			raise BlooketErrors.BadRequest()
 		else:
 			raise BlooketErrors.UnknownError()
 def formatInfoString(playerName:str, token) -> str:
@@ -89,10 +98,13 @@ def openBox(box:str, token:str) -> dict:
 	res = requests.put("https://api.blooket.com/api/users/unlockblook", data={"name" : name, "box": box}, headers={"authorization" : token})
 	try: 
 		j = res.json()
+		return j
 	except Exception as e:
 		if res.status_code == 404:
 			raise BlooketErrors.InvalidName()
 		elif res.status_code == 401:
 			raise BlooketErrors.FailedAuth()
+		elif res.status_code == 400:
+			raise BlooketErrors.BadRequest()
 		else:
 			raise BlooketErrors.UnknownError()
