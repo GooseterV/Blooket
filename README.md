@@ -27,11 +27,43 @@ Go to blooket blooks page
 
 # spoofer.js
 ### Show all of the blooks in your blook page along with custom ones as a special rarity
-
 </br>
 
 Click on  `js`
 - spoofer.js
+- copy button (two papers icon)
+Go to blooket blooks page
+- open up console (ctrl + shift + j)
+- paste code into console
+
+# exportTDSave.js
+### Export your tower defense saves data in a base64 encoded string for easy sharing.
+</br>
+
+Click on  `js`
+- exportTDSave.js
+- copy button (two papers icon)
+Go to blooket blooks page
+- open up console (ctrl + shift + j)
+- paste code into console
+
+# exportTODSave.js
+### Export your tower of doom saves data in a base64 encoded string for easy sharing.
+</br>
+
+Click on  `js`
+- exportTODSave.js
+- copy button (two papers icon)
+Go to blooket blooks page
+- open up console (ctrl + shift + j)
+- paste code into console
+
+# exportCafeSave.js
+### Export your cafe saves data in a base64 encoded string for easy sharing.
+</br>
+
+Click on  `js`
+- exportCafeSave.js
 - copy button (two papers icon)
 Go to blooket blooks page
 - open up console (ctrl + shift + j)
