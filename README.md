@@ -93,13 +93,13 @@ Go to blooket
 - open up console (ctrl + shift + j)
 - paste code into console
 
-# importTDSave.js
+# importCafeSave.js
 ### Import your tower defense saves data from the base64 string you exported.
 ### **WARNING** **THIS SETS ALL SAVES TO SPECIFIED SAVE, NOT JUST ONE**
 </br>
 
 Click on  `js`
-- importTDSave.js
+- importCafeSave.js
 - copy button (two papers icon)
 Go to blooket
 - open up console (ctrl + shift + j)
