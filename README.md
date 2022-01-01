@@ -71,7 +71,7 @@ Go to blooket
 
 # importTDSave.js
 ### Import your tower defense saves data from the base64 string you exported.
-### ** WARNING ** ** THIS SETS ALL SAVES TO SPECIFIED SAVE, NOT JUST ONE **
+### **WARNING** **THIS SETS ALL SAVES TO SPECIFIED SAVE, NOT JUST ONE**
 </br>
 
 Click on  `js`
