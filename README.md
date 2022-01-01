@@ -69,6 +69,16 @@ Go to blooket
 - open up console (ctrl + shift + j)
 - paste code into console
 
+# importTDSave.js
+### Import your tower defense saves data from the base64 string you exported.
+</br>
+
+Click on  `js`
+- importTDSave.js
+- copy button (two papers icon)
+Go to blooket
+- open up console (ctrl + shift + j)
+- paste code into console
 
 ## IOS Mobile Devices
 Install the shortcuts app through app store (if not already built into device)
