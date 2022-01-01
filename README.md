@@ -69,6 +69,7 @@ Go to blooket
 - open up console (ctrl + shift + j)
 - paste code into console
 
+
 ## IOS Mobile Devices
 Install the shortcuts app through app store (if not already built into device)
 Open up app
