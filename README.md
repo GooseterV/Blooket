@@ -43,7 +43,7 @@ Go to blooket blooks page
 Click on  `js`
 - exportTDSave.js
 - copy button (two papers icon)
-Go to blooket blooks page
+Go to blooket
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -54,7 +54,7 @@ Go to blooket blooks page
 Click on  `js`
 - exportTODSave.js
 - copy button (two papers icon)
-Go to blooket blooks page
+Go to blooket
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -65,7 +65,7 @@ Go to blooket blooks page
 Click on  `js`
 - exportCafeSave.js
 - copy button (two papers icon)
-Go to blooket blooks page
+Go to blooket
 - open up console (ctrl + shift + j)
 - paste code into console
 
