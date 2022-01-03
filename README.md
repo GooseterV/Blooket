@@ -21,7 +21,7 @@ Go to blooket blooks page
 Click on  `js`
 - blookInfoExtender.js
 - copy button (two papers icon)
-Go to blooket blooks page
+Go to blooket blooks page (./blooks)
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -32,7 +32,7 @@ Go to blooket blooks page
 Click on  `js`
 - spoofer.js
 - copy button (two papers icon)
-Go to blooket blooks page
+Go to blooket blooks page (./blooks)
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -43,7 +43,7 @@ Go to blooket blooks page
 Click on  `js`
 - exportTDSave.js
 - copy button (two papers icon)
-Go to blooket
+Go to blooket (any page)
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -54,7 +54,7 @@ Go to blooket
 Click on  `js`
 - exportTODSave.js
 - copy button (two papers icon)
-Go to blooket
+Go to blooket (any page)
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -65,7 +65,7 @@ Go to blooket
 Click on  `js`
 - exportCafeSave.js
 - copy button (two papers icon)
-Go to blooket
+Go to blooket (any page)
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -77,7 +77,7 @@ Go to blooket
 Click on  `js`
 - importTDSave.js
 - copy button (two papers icon)
-Go to blooket
+Go to blooket (any page)
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -89,7 +89,7 @@ Go to blooket
 Click on  `js`
 - importTODSave.js
 - copy button (two papers icon)
-Go to blooket
+Go to blooket (any page)
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -101,7 +101,7 @@ Go to blooket
 Click on  `js`
 - importCafeSave.js
 - copy button (two papers icon)
-Go to blooket
+Go to blooket (any page)
 - open up console (ctrl + shift + j)
 - paste code into console
 
