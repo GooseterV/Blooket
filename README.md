@@ -8,7 +8,7 @@
 Click on  `js`
 - blookViewer.js
 - copy button (two papers icon)
-Go to blooket blooks page
+Go to blooket blooks page (./blooks)
 - open up console (ctrl + shift + j)
 - paste code into console
 
