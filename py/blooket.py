@@ -886,8 +886,9 @@ class BlooketErrors:
 			super().__init__(self.message)
 		pass
 
-def login(user, password):
+def login(user, password) -> None:
 	res = r.post("https://api.blooket.com/api/users/login", data=json.dumps({"name":user, "password":password}))
+
 def getBlooks(playerName:str, username, password):
 	login(username, password)
 	re = r.get(f"https://api.blooket.com/api/users?name={playerName}")
@@ -909,7 +910,7 @@ def getBlooks(playerName:str, username, password):
 		else:
 			raise BlooketErrors.UnknownError()
 
-def formatBlookString(playerName, username, password):
+def formatBlookString(playerName, username, password) -> str:
 	blookString = f"\033[1m{playerName}'s Blooks\033[0m\n   "
 	userBlooks = getBlooks(playerName, username, password)
 	blookRarityColors = {
