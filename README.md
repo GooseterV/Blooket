@@ -14,7 +14,8 @@ Click on  `js`
 - blookViewer.js
 - copy button (two papers icon)
 Go to blooket blooks page (./blooks)
-- open up console (ctrl + shift + j)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 
@@ -27,6 +28,7 @@ Click on  `js`
 - blookInfoExtender.js
 - copy button (two papers icon)
 Go to blooket blooks page (./blooks)
+- click on a non-common blook (uncommon + )
 - open up console (ctrl + shift + j)
 - paste code into console
 
@@ -38,6 +40,7 @@ Click on  `js`
 - spoofer.js
 - copy button (two papers icon)
 Go to blooket blooks page (./blooks)
+- click on a non-common blook (uncommon + )
 - open up console (ctrl + shift + j)
 - paste code into console
 
