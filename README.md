@@ -8,7 +8,7 @@
 
  # Blooket Stuff - JS
 
-# extendStats.js
+## extendStats.js
 ### See other people's and your own advanced statistics
 #### For viewing other people's stats, add `?name={player}` to the end of the url bar (as you would with normal stats viewing)
 #### The script will now get their stats instead of yours
