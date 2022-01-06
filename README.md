@@ -4,7 +4,8 @@
 #### As long as you are using them only as they're meant to be used you will not be suspended.
 #### [Blooket Terms of Service](https://www.blooket.com/terms)
 </br>
-# Blooket Stuff - JS
+
+ # Blooket Stuff - JS
 
 # blookViewer.js
 ### See other people's blooks in the form of your own blook page
