@@ -13,7 +13,7 @@
 - Stats Info exporter</br>
  `↪` Export and share your raw stats info to other players</br>
 - Game History exporter</br>
- `↪`Export all of your previous games played history for viewing or sharing
+ `↪` Export all of your previous games played history for viewing or sharing
 - "EXPORT MY DATA" Button </br>
  `↪` In advanced settings, will export ALL of signed in user's data.
 - Export and import sets with their id (found on set's page in url bar)</br>
