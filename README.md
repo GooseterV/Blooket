@@ -2,6 +2,7 @@
 #### Blooket has started to take action on accounts that spam the api too fast. 
 #### If you are worried about anything happening to your account while using these, read this section and the FAQ.
 #### As long as you are using them only as they're meant to be used you will not be suspended.
+#### I have gotten confirmation that none of these will disable your account, so do not worry
 #### [Blooket Terms of Service](https://www.blooket.com/terms)
 </br>
 
