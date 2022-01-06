@@ -15,7 +15,7 @@
 </br>
 
 Click on  `js`
-- `blooks`
+- `other`
 - `extendStats.js`
 - copy button (two papers icon)
 Go to blooket stats page (./stats)
