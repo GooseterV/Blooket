@@ -2,7 +2,7 @@
 
 ## Viewing
 - Add advanced stats viewer</br>
- `&#8618;` Add more stat boxes to the stats page, just like the viral "stats hack" you will be able to see other people's stats as well your own with boxes such as: "Total Blook Value" and "Boxes Opened"
+ `&#8618;``↪` Add more stat boxes to the stats page, just like the viral "stats hack" you will be able to see other people's stats as well your own with boxes such as: "Total Blook Value" and "Boxes Opened"
 - Add advanced marketplace view</br>
  \↪ Info on every box, viewable daily drops
 - Add advanced settings page</br>
