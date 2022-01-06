@@ -13,7 +13,8 @@
 </br>
 
 Click on  `js`
-- blookViewer.js
+- `blooks`
+- `blookViewer.js`
 - copy button (two papers icon)
 Go to blooket blooks page (./blooks)
 - click on a non-common blook (uncommon + )
@@ -27,11 +28,12 @@ Go to blooket blooks page (./blooks)
 </br>
 
 Click on  `js`
-- blookInfoExtender.js
+- `blooks`
+- `blookInfoExtender.js`
 - copy button (two papers icon)
 Go to blooket blooks page (./blooks)
 - click on a non-common blook (uncommon + )
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # spoofer.js
@@ -39,11 +41,12 @@ Go to blooket blooks page (./blooks)
 </br>
 
 Click on  `js`
-- spoofer.js
+- `blooks`
+- `spoofer.js`
 - copy button (two papers icon)
 Go to blooket blooks page (./blooks)
 - click on a non-common blook (uncommon + )
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # exportTDSave.js
@@ -51,10 +54,12 @@ Go to blooket blooks page (./blooks)
 </br>
 
 Click on  `js`
-- exportTDSave.js
+- `export`
+- `exportTDSave.js`
 - copy button (two papers icon)
-Go to blooket (any page)
-- open up console (ctrl + shift + j)
+Go to blooket blooks page (./blooks)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # exportTODSave.js
@@ -62,10 +67,12 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- exportTODSave.js
+- `export`
+- `exportTODSave.js`
 - copy button (two papers icon)
-Go to blooket (any page)
-- open up console (ctrl + shift + j)
+Go to blooket blooks page (./blooks)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # exportCafeSave.js
@@ -73,10 +80,12 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- exportCafeSave.js
+- `export`
+- `exportCafeSave.js`
 - copy button (two papers icon)
-Go to blooket (any page)
-- open up console (ctrl + shift + j)
+Go to blooket blooks page (./blooks)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # importTDSave.js
@@ -85,10 +94,12 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- importTDSave.js
+- `import`
+- `importTDSave.js`
 - copy button (two papers icon)
-Go to blooket (any page)
-- open up console (ctrl + shift + j)
+Go to blooket blooks page (./blooks)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # importTODSave.js
@@ -97,10 +108,12 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- importTODSave.js
+- `import`
+- `importTODSave.js`
 - copy button (two papers icon)
-Go to blooket (any page)
-- open up console (ctrl + shift + j)
+Go to blooket blooks page (./blooks)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # importCafeSave.js
@@ -109,10 +122,12 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- importCafeSave.js
+- `import`
+- `importCafeSave.js`
 - copy button (two papers icon)
-Go to blooket (any page)
-- open up console (ctrl + shift + j)
+Go to blooket blooks page (./blooks)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 ## IOS Mobile Devices
