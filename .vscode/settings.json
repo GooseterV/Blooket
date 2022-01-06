@@ -1,0 +1,6 @@
+{
+	"files.autoSave": "afterDelay",
+	"editor.fontSize": 13,
+	"editor.fontFamily": "'JetBrains Mono Medium', monospace",
+	"diffEditor.maxFileSize": 75
+}
