@@ -1,8 +1,8 @@
 # **NOTICE**
-## Blooket has started to take action on accounts that spam the api too fast. 
-## If you are worried about anything happening to your account while using these, be assured.
-## As long as you are using them only as they're meant to be used you will not be suspended.
-### [Blooket Terms of Service](https://www.blooket.com/terms)
+#### Blooket has started to take action on accounts that spam the api too fast. 
+#### If you are worried about anything happening to your account while using these, be assured.
+#### As long as you are using them only as they're meant to be used you will not be suspended.
+#### [Blooket Terms of Service](https://www.blooket.com/terms)
 # Blooket Stuff - JS
 
 # blookViewer.js
@@ -140,6 +140,8 @@ completion("Done.");
 
 ### Note! This will work with all scripts and other javascript, so don't delete the shortcut when you're done.
 
+## Android/Samsung Devices
+- Refer to Bookmarklets section.
 
 ## Bookmarklets 
 - Go to any page and create a new bookmark with the favorite icon (star)
@@ -182,3 +184,28 @@ print(f"   Total value of {name}'s blooks: {t}\n")
 ## Issues & Bugs
 - Check for any mistakes you may have made 
 - If you are certain it is a problem with the code, go to the [**`Issues`**](https://github.com/GooseterV/Blooket/issues/new) tab of the repo and create a new issue
+
+## Faq
+
+Q. Will you make in game exploits?
+A. No, because that would be breaking Blooket ToS.
+</br>
+Q. Will my account be suspended for using these?
+A. No, as long as you are not spamming the API or breaking ToS you will not be suspended.
+</br>
+Q. Can I use this on android/ios and how do I?
+A. For IOS please view the IOS/Apple section of this file, for Android/Samsung/Google OS please view the bookmarklet section.
+</br>
+Q. Is this ever going to get taken down?
+A. Until I am required to by Blooket ToS this repo will stay public.
+</br>
+Q. Can the python be run on any os?
+A. The Python section has only been tested on Windows, Repl.it and IOS Pythonista3. It should work on Linux and other systems but it has not been tested.
+</br>
+Q. When I use any of the Blook scripts, it always gets messed up and displays some info twice. How do i fix this?
+A. Before running the script on the Blooks page, make sure you click on a non-common blook. This happens because the common blooks do not start with a sell price, messing things up.
+</br>
+
+**If your question is not listed here anywhere, please feel free to ask in the Issues/Bugs tab**
+
+
