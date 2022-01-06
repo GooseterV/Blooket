@@ -8,6 +8,20 @@
 
  # Blooket Stuff - JS
 
+# extendStats.js
+### See other people's and your own advanced statistics
+#### For viewing other people's stats, type `?name={player}` as you would with normal stats viewing
+#### The script will now get their stats instead of yours
+</br>
+
+Click on  `js`
+- `blooks`
+- `extendStats.js`
+- copy button (two papers icon)
+Go to blooket stats page (./stats)
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+
 # blookViewer.js
 ### See other people's blooks in the form of your own blook page
 </br>
@@ -58,7 +72,6 @@ Click on  `js`
 - `exportHistories.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
@@ -71,7 +84,6 @@ Click on  `js`
 - `exportUserStats.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
@@ -84,7 +96,6 @@ Click on  `js`
 - `exportUserBlooks.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
@@ -96,8 +107,7 @@ Click on  `js`
 - `export`
 - `exportTDSave.js`
 - copy button (two papers icon)
-Go to blooket blooks page (./blooks)
-- click on a non-common blook (uncommon + )
+Go to blooket (any page)
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
@@ -110,7 +120,6 @@ Click on  `js`
 - `exportTODSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
@@ -123,7 +132,6 @@ Click on  `js`
 - `exportCafeSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
@@ -137,7 +145,6 @@ Click on  `js`
 - `importTDSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
@@ -151,7 +158,6 @@ Click on  `js`
 - `importTODSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
@@ -165,7 +171,6 @@ Click on  `js`
 - `importCafeSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
