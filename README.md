@@ -1,5 +1,8 @@
-# **WARNING**
-## Blooket has started to take action on accounts that spam the api too fast. I have checked and these scripts are not bypassing [Blooket Terms of Use/Service](https://www.blooket.com/terms)
+# **NOTICE**
+## Blooket has started to take action on accounts that spam the api too fast. 
+## If you are worried about anything happening to your account while using these, be assured.
+## As long as you are using them only as they're meant to be used you will not be suspended.
+### [Blooket Terms of Service](https://www.blooket.com/terms)
 # Blooket Stuff - JS
 
 # blookViewer.js
