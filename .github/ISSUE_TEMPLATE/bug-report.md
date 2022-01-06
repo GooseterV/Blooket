@@ -1,9 +1,9 @@
 ---
 name: Bug Report
 about: Something went wrong when you tried to run a script, report it here.
-title: 'Bug '
+title: Bug Report
 labels: bug
-assignees: ''
+assignees: GooseterV
 
 ---
 
