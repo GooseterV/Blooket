@@ -49,6 +49,45 @@ Go to blooket blooks page (./blooks)
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
+# exportHistories.js
+### Export all of your previously played games in a base64 encoded JSON string for easy sharing
+</br>
+
+Click on  `js`
+- `export`
+- `exportHistories.js`
+- copy button (two papers icon)
+Go to blooket (any page)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+
+# exportUserStats.js
+### Export your stats in a base64 encoded JSON string for easy sharing
+</br>
+
+Click on  `js`
+- `export`
+- `exportUserStats.js`
+- copy button (two papers icon)
+Go to blooket (any page)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+
+# exportUserBlooks.js
+### Export your blooks in a base64 encoded JSON string for easy sharing
+</br>
+
+Click on  `js`
+- `export`
+- `exportUserBlooks.js`
+- copy button (two papers icon)
+Go to blooket (any page)
+- click on a non-common blook (uncommon + )
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+
 # exportTDSave.js
 ### Export your tower defense saves data in a base64 encoded string for easy sharing.
 </br>
@@ -70,7 +109,7 @@ Click on  `js`
 - `export`
 - `exportTODSave.js`
 - copy button (two papers icon)
-Go to blooket blooks page (./blooks)
+Go to blooket (any page)
 - click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
@@ -83,7 +122,7 @@ Click on  `js`
 - `export`
 - `exportCafeSave.js`
 - copy button (two papers icon)
-Go to blooket blooks page (./blooks)
+Go to blooket (any page)
 - click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
@@ -97,7 +136,7 @@ Click on  `js`
 - `import`
 - `importTDSave.js`
 - copy button (two papers icon)
-Go to blooket blooks page (./blooks)
+Go to blooket (any page)
 - click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
@@ -111,7 +150,7 @@ Click on  `js`
 - `import`
 - `importTODSave.js`
 - copy button (two papers icon)
-Go to blooket blooks page (./blooks)
+Go to blooket (any page)
 - click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
@@ -125,7 +164,7 @@ Click on  `js`
 - `import`
 - `importCafeSave.js`
 - copy button (two papers icon)
-Go to blooket blooks page (./blooks)
+Go to blooket (any page)
 - click on a non-common blook (uncommon + )
 - open up devtools console (ctrl + shift + j)
 - paste code into console
