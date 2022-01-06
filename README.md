@@ -1,8 +1,9 @@
 # **NOTICE**
 #### Blooket has started to take action on accounts that spam the api too fast. 
-#### If you are worried about anything happening to your account while using these, be assured.
+#### If you are worried about anything happening to your account while using these, read this section and the FAQ.
 #### As long as you are using them only as they're meant to be used you will not be suspended.
 #### [Blooket Terms of Service](https://www.blooket.com/terms)
+</br>
 # Blooket Stuff - JS
 
 # blookViewer.js
