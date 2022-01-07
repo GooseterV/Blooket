@@ -2,17 +2,33 @@
 #### Blooket has started to take action on accounts that spam the api too fast. 
 #### If you are worried about anything happening to your account while using these, read this section and the FAQ.
 #### As long as you are using them only as they're meant to be used you will not be suspended.
+#### I have gotten confirmation that none of these will disable your account, so do not worry
 #### [Blooket Terms of Service](https://www.blooket.com/terms)
 </br>
 
  # Blooket Stuff - JS
+
+# extendStats.js
+### See other people's and your own advanced statistics
+#### For viewing other people's stats, add `?name={player}` to the end of the url bar (as you would with normal stats viewing)
+#### The script will now get their stats instead of yours
+</br>
+
+Click on  `js`
+- `other`
+- `extendStats.js`
+- copy button (two papers icon)
+Go to blooket stats page (./stats)
+- open up devtools console (ctrl + shift + j)
+- paste code into console
 
 # blookViewer.js
 ### See other people's blooks in the form of your own blook page
 </br>
 
 Click on  `js`
-- blookViewer.js
+- `blooks`
+- `blookViewer.js`
 - copy button (two papers icon)
 Go to blooket blooks page (./blooks)
 - click on a non-common blook (uncommon + )
@@ -26,11 +42,12 @@ Go to blooket blooks page (./blooks)
 </br>
 
 Click on  `js`
-- blookInfoExtender.js
+- `blooks`
+- `blookInfoExtender.js`
 - copy button (two papers icon)
 Go to blooket blooks page (./blooks)
 - click on a non-common blook (uncommon + )
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # spoofer.js
@@ -38,11 +55,48 @@ Go to blooket blooks page (./blooks)
 </br>
 
 Click on  `js`
-- spoofer.js
+- `blooks`
+- `spoofer.js`
 - copy button (two papers icon)
 Go to blooket blooks page (./blooks)
 - click on a non-common blook (uncommon + )
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+
+# exportHistories.js
+### Export all of your previously played games in a base64 encoded JSON string for easy sharing
+</br>
+
+Click on  `js`
+- `export`
+- `exportHistories.js`
+- copy button (two papers icon)
+Go to blooket (any page)
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+
+# exportUserStats.js
+### Export your stats in a base64 encoded JSON string for easy sharing
+</br>
+
+Click on  `js`
+- `export`
+- `exportUserStats.js`
+- copy button (two papers icon)
+Go to blooket (any page)
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+
+# exportUserBlooks.js
+### Export your blooks in a base64 encoded JSON string for easy sharing
+</br>
+
+Click on  `js`
+- `export`
+- `exportUserBlooks.js`
+- copy button (two papers icon)
+Go to blooket (any page)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # exportTDSave.js
@@ -50,10 +104,11 @@ Go to blooket blooks page (./blooks)
 </br>
 
 Click on  `js`
-- exportTDSave.js
+- `export`
+- `exportTDSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # exportTODSave.js
@@ -61,10 +116,11 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- exportTODSave.js
+- `export`
+- `exportTODSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # exportCafeSave.js
@@ -72,10 +128,11 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- exportCafeSave.js
+- `export`
+- `exportCafeSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # importTDSave.js
@@ -84,10 +141,11 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- importTDSave.js
+- `import`
+- `importTDSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # importTODSave.js
@@ -96,10 +154,11 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- importTODSave.js
+- `import`
+- `importTODSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 # importCafeSave.js
@@ -108,10 +167,11 @@ Go to blooket (any page)
 </br>
 
 Click on  `js`
-- importCafeSave.js
+- `import`
+- `importCafeSave.js`
 - copy button (two papers icon)
 Go to blooket (any page)
-- open up console (ctrl + shift + j)
+- open up devtools console (ctrl + shift + j)
 - paste code into console
 
 ## IOS Mobile Devices
@@ -164,7 +224,8 @@ To run it, head to blooket and click the bookmark
 - create a new python file and type in:
 ```py
 import blooket
-token = "JWT yourtoken" # localStorage.token
+email = "email"
+password="password"
 name = "Yourblooketname" # localStorage.washere
 ```
 - to see someone's blooks and calculate the total value of their blooks you can use this code:
@@ -172,9 +233,10 @@ name = "Yourblooketname" # localStorage.washere
 import blooket
 import json
 name = "playername"
-token = "localStorage.token (your token)"
-print(blooket.formatBlookString(name, token))
-blooks = blooket.getBlooks(name, token)
+email = "email"
+password="password"
+print(blooket.formatBlookString(name, email, password))
+blooks = blooket.getBlooks(name, email, password)
 t = 0
 for blook in blooks['blooks'].keys():
     rarity = json.loads(open("storage/blooksInfo.json", "r").read())["Info"]["Blooks"][blook]["Rarity"]
