@@ -224,7 +224,8 @@ To run it, head to blooket and click the bookmark
 - create a new python file and type in:
 ```py
 import blooket
-token = "JWT yourtoken" # localStorage.token
+email = "email"
+password="password"
 name = "Yourblooketname" # localStorage.washere
 ```
 - to see someone's blooks and calculate the total value of their blooks you can use this code:
@@ -232,9 +233,10 @@ name = "Yourblooketname" # localStorage.washere
 import blooket
 import json
 name = "playername"
-token = "localStorage.token (your token)"
-print(blooket.formatBlookString(name, token))
-blooks = blooket.getBlooks(name, token)
+email = "email"
+password="password"
+print(blooket.formatBlookString(name, email, password))
+blooks = blooket.getBlooks(name, email, password)
 t = 0
 for blook in blooks['blooks'].keys():
     rarity = json.loads(open("storage/blooksInfo.json", "r").read())["Info"]["Blooks"][blook]["Rarity"]
