@@ -193,6 +193,7 @@ Go back to this github repo
 Click on  `js`
 - `import`
 - `importFromKahoot.js`
+- copy button (two papers icon)
   
 Go to Blooket (any page)
 
@@ -219,7 +220,10 @@ Click on  `js`
 
 - `import`
 - `importFromGimkit.js`
+- copy button (two papers icon)
+
 Go to Blooket (any page)
+
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
@@ -243,6 +247,7 @@ Go back to this github repo
 Click on  `js`
 - `import`
 - `importFromQuizizz.js`
+- copy button (two papers icon)
   
 Go to Blooket (any page)
 
