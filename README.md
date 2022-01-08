@@ -182,14 +182,20 @@ Click on  `js`
 - `export`
 - `exportFromKahoot.js`
 - copy button (two papers icon)
+
 Go to the page of the kahoot set (`https://create.kahoot.it/details/{setid}`)
+
 - open up devtools console (ctrl + shift + j)
 - paste code into console
+
 Go back to this github repo
+
 Click on  `js`
 - `import`
 - `importFromKahoot.js`
+  
 Go to Blooket (any page)
+
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
