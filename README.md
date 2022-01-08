@@ -201,11 +201,16 @@ Click on  `js`
 - `export`
 - `exportFromGimkit.js`
 - copy button (two papers icon)
+
 Go to the page of the gimkit kit (`https://www.gimkit.com/view/{kitid}`)
+
 - open up devtools console (ctrl + shift + j)
 - paste code into console
+
 Go back to this github repo
+
 Click on  `js`
+
 - `import`
 - `importFromGimkit.js`
 Go to Blooket (any page)
@@ -217,17 +222,24 @@ Go to Blooket (any page)
 </br>
 
 Click on  `js`
+
 - `export`
 - `exportFromQuizizz.js`
 - copy button (two papers icon)
+
 Go to the page of the quizizz quiz (`https://quizizz.com/join/quiz/{quizid}/start`)
+
 - open up devtools console (ctrl + shift + j)
 - paste code into console
+
 Go back to this github repo
+
 Click on  `js`
 - `import`
 - `importFromQuizizz.js`
+  
 Go to Blooket (any page)
+
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
