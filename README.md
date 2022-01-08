@@ -174,6 +174,44 @@ Go to blooket (any page)
 - open up devtools console (ctrl + shift + j)
 - paste code into console
 
+# importFromKahoot.js / exportFromKahoot.js
+### Export a set from kahoot and import it into Blooket.
+</br>
+
+Click on  `js`
+- `export`
+- `exportFromKahoot.js`
+- copy button (two papers icon)
+Go to the page of the kahoot set (`https://create.kahoot.it/details/{setid}`)
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+Go back to this github repo
+Click on  `js`
+- `import`
+- `importFromKahoot.js`
+Go to Blooket (any page)
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+
+# importFromGimkit.js / exportFromGimkit.js
+### Export a kit from gimkit and import it into Blooket.
+</br>
+
+Click on  `js`
+- `export`
+- `exportFromGimkit.js`
+- copy button (two papers icon)
+Go to the page of the gimkit kit (`https://www.gimkit.com/view/{kitid}`)
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+Go back to this github repo
+Click on  `js`
+- `import`
+- `importFromGimkit.js`
+Go to Blooket (any page)
+- open up devtools console (ctrl + shift + j)
+- paste code into console
+
 ## IOS Mobile Devices
 Install the shortcuts app through app store (if not already built into device)
 Open up app
