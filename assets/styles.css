@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html {
+    font-family:'Nunito' !important;
+    
+}
+input {
+    outline:none;
+    border: none;
+    background-color:deeppink;
+    border-radius:7px;
+    height:35px;
+    font-family:'Nunito' !important;
+    font-weight:600;
+    font-size:20px;
+    width:250px;
+}
