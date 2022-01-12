@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html {
+    font-family:'Nunito' !important;
+    
+}
+input {
+    outline:none;
+    border: none;
+    background-color:deeppink;
+    border-radius:7px;
+    height:30px;
+    font-family:'Nunito' !important;
+    font-weight:600;
+    font-size:15px;
+    width:250px;
+}
+
+.midbox {
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+    top:25%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    vertical-align: middle;
+}
+
+button {
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color:deeppink;
+    font-family: 'Nunito';
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 0.67rem solid transparent;
+    border-radius: 7px;
+    text-decoration: none;
+    position: relative;
+}
+
+button:hover {
+    cursor: pointer !important;
+}
