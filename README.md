@@ -46,6 +46,16 @@ Q. When I use any of the Blook scripts, it always gets messed up and displays so
 A. Before running the script on the Blooks page, make sure you click on a non-common blook. This happens because the common blooks do not start with a sell price, messing things up.
 </br>
 </br>
+Q. Why is the code obfuscated?
+</br>
+A. I obfuscate the code for many reasons, many of them are to respect other blooket community developer's wishes, others are for my own reasons.
+</br>
+</br>
+Q. On the export scripts, it always says something goes wrong and fails to copy to clipboard.
+</br>
+A. This is due to the mozilla clipboard api not being supported on safari, it currently detects anything wrong as an issue and will always download file.
+</br>
+</br>
 **If your question is not listed here anywhere, please feel free to ask in the Issues/Bugs tab**
 
 
