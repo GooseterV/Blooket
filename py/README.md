@@ -24,8 +24,8 @@ print(blooket.formatBlookString(name, email, password))
 blooks = blooket.getBlooks(name, email, password)
 t = 0
 for blook in blooks['blooks'].keys():
-    rarity = json.loads(open("storage/blooksInfo.json", "r").read())["Info"]["Blooks"][blook]["Rarity"]
-    blookPrice = json.loads(open("storage/blooksInfo.json", "r").read())["Info"]["Sell Prices"][rarity]
+    rarity = blooksInfo["Info"]["Blooks"][blook]["Rarity"]
+    blookPrice = blooksInfo["Info"]["Sell Prices"][rarity]
     t += blookPrice*blooks['blooks'][blook]
 
 print(f"   Total value of {name}'s blooks: {t}\n")
