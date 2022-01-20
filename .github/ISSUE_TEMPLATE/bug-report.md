@@ -22,6 +22,9 @@ Steps to reproduce the behavior:
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
+**Version**
+What repository version is the bug in. Make sure it is a valid and non-deprecated version.
+
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
