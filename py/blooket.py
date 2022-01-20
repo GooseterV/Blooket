@@ -889,8 +889,7 @@ class BlooketErrors:
 def login(user, password) -> None:
 	res = r.post("https://api.blooket.com/api/users/login", data=json.dumps({"name":user, "password":password}))
 
-def getBlooks(playerName:str, username, password):
-	login(username, password)
+def getBlooks(playerName:str):
 	re = r.get(f"https://api.blooket.com/api/users?name={playerName}")
 	
 	try:
@@ -910,9 +909,9 @@ def getBlooks(playerName:str, username, password):
 		else:
 			raise BlooketErrors.UnknownError()
 
-def formatBlookString(playerName, username, password) -> str:
+def formatBlookString(playerName) -> str:
 	blookString = f"\033[1m{playerName}'s Blooks\033[0m\n   "
-	userBlooks = getBlooks(playerName, username, password)
+	userBlooks = getBlooks(playerName)
 	blookRarityColors = {
 		"Uncommon":"\033[38;2;75;194;46m", #rgb(75, 194, 46)
 		"Rare":"\033[38;2;10;20;250m", #rgb(10, 20, 250)
@@ -926,8 +925,7 @@ def formatBlookString(playerName, username, password) -> str:
 		blookString += f"{blookColor}{blookName}: {blookAmount:.2f}\033[0m\n   "
 	return blookString
 
-def getInfo(playerName:str, username, password) -> dict:
-	login(username, password)
+def getInfo(playerName:str) -> dict:
 	userInfo = r.get(f"https://api.blooket.com/api/users?name={playerName}")
 	try:
 		infoJSON = json.loads(userInfo.text)
@@ -941,8 +939,8 @@ def getInfo(playerName:str, username, password) -> dict:
 			raise BlooketErrors.BadRequest()
 		else:
 			raise BlooketErrors.UnknownError()
-def formatInfoString(playerName:str, name:str, password:str) -> str:
-	userInfo = getInfo(playerName, name, password)
+def formatInfoString(playerName:str) -> str:
+	userInfo = getInfo(playerName)
 	infoKeys = []
 	infoString = f"\033[1m{playerName}'s Information\033[0m\n   "
 	for (infoKey, infoValue) in zip(userInfo.keys(), userInfo.values()):
@@ -955,9 +953,8 @@ def formatInfoString(playerName:str, name:str, password:str) -> str:
 			infoString += f"{subString}: {infoValue}\n   "
 	return infoString
 
-def openBox(box:str, name:str, password:str) -> dict:
+def openBox(box:str, name:str) -> dict:
 	#json.loads(base64.b64decode(token.split(".")[1] + "=="))["name"]
-	login(name, password)
 	res = r.put("https://api.blooket.com/api/users/unlockblook", data=json.dumps({"name" : name, "box": box}))
 
 	try: 

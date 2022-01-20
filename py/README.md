@@ -5,23 +5,21 @@
  `↪` Run command `$ python`  to verify python is installed correctly
 - Verify pip is installed <br>
  `↪` Run command `python -m pip`  in your shell
-- Create a new folder and copy `blooket.py` into it 
+- Create a new folder and copy `blooket.py` into it <br>
+ `↪` You can also copy blooket.py into your python `site-packages` folder
 - Create a new python file named `main.py` and type in:
 ```py
 import blooket
-email = "email"
-password = "password"
-name = "Yourblooketname" # localStorage.washere
+blooket.login("username/email", "password") # replace username with your username and password with your pass
 ```
 - to see someone's blooks and calculate the total value of their blooks you can use this code:
 ```py
 import blooket
 import json
 name = "playername"
-email = "email"
-password="password"
-print(blooket.formatBlookString(name, email, password))
-blooks = blooket.getBlooks(name, email, password)
+blooket.login("username/email", "password")
+print(blooket.formatBlookString(name))
+blooks = blooket.getBlooks(name)
 t = 0
 for blook in blooks['blooks'].keys():
     rarity = blooksInfo["Info"]["Blooks"][blook]["Rarity"]
@@ -34,7 +32,6 @@ For seeing other players stats you can do:
 ```py
 import blooket
 name = "playername"
-email = "email"
-password="password"
-print(formatInfoString(name, email, password))
+blooket.login("username/email", "password")
+print(formatInfoString(name))
 ```
