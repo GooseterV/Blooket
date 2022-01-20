@@ -56,6 +56,6 @@ Q. On the export scripts, it always says something goes wrong and fails to copy 
 A. This is due to the mozilla clipboard api not being supported on safari, it currently detects anything wrong as an issue and will always download file.
 </br>
 </br>
-**If your question is not listed here anywhere, please feel free to ask in the Issues/Bugs tab**
+**If your question is not listed here anywhere, please feel free to ask in the q/a section of the discussions tab**
 
 
