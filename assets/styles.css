@@ -4,7 +4,8 @@
 
 html {
     font-family:'Nunito' !important;
-    
+    background-color:rgb(9, 2, 48);
+    overflow-y:scroll;
 }
 input {
     outline:none;
@@ -17,33 +18,48 @@ input {
     font-size:15px;
     width:250px;
 }
-
+::-webkit-scrollbar {
+    border-radius:1px;
+}
 .midbox {
     position:absolute;
     display:flex;
-    flex-direction:row;
-    top:25%;
+    flex-direction:column;
+    top:65%;
     left:50%;
     transform:translate(-50%, -50%);
     vertical-align: middle;
+    align-items:center;
 }
 
 button {
     border-radius: 15px;
     display: inline-flex;
     align-items: center;
+    background-color:rgb(20, 100, 220);
     justify-content: center;
-    background-color:deeppink;
     font-family: 'Nunito';
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     text-decoration: none;
     border: 0.67rem solid transparent;
     border-radius: 7px;
     text-decoration: none;
     position: relative;
+    margin: 5px;
 }
 
 button:hover {
     cursor: pointer !important;
+    background-color: rgb(12, 76, 172);
+}
+
+.row {
+    display:flex;
+    position:relative;
+    flex-direction:row;
+}
+
+.row button {
+    width:175px;
 }
