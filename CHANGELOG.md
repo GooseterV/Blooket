@@ -30,8 +30,10 @@
 **Description**
 - **Fix issues with safari blooks**
 
-**Changes**
-- ****
+**Changed Files**
+- **blookInfoExtender.js**
+- **blookViewer.js**
+- **spoofer.js**
 
 **Fixes**
 - **fixed safari blooks not showing for blook scripts**
