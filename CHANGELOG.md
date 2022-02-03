@@ -24,5 +24,17 @@
 **Fixes**
 - **none**
 
+##  **2/3/22 6:12 PM EST**
+<br>
+
+**Description**
+- **Fix issues with safari blooks**
+
+**Changes**
+- ****
+
+**Fixes**
+- **fixed safari blooks not showing for blook scripts**
+
 
 
