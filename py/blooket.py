@@ -703,6 +703,11 @@ blookData = {
 				"Rarity":"Mystical",
 				"Box":"POP Event",
 				"dropRate":"Awarded"
+			},
+			"Lovely Frog": {
+				"Rarity":"Chroma",
+				"Box":"Lovely Box",
+				"dropRate": 100
 			}
 		},
 		"Sell Prices": {
@@ -850,7 +855,8 @@ blookData = {
 			"Tim the Alien": "https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/space/timTheAlien.svg",
 			"Master Elf":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/masterElf.svg",
 			"Agent Owl":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/agentOwl.svg",
-			"Phantom King":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/phantomKing.svg"
+			"Phantom King":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/phantomKing.svg",
+			"Lovely Frog":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/aquatic/lovelyFrog.svg"
 		},
 		"Colors": {
 			"Common": "rgb(255, 255, 255)",
