@@ -708,6 +708,11 @@ blookData = {
 				"Rarity":"Chroma",
 				"Box":"Lovely Box",
 				"dropRate": 100
+			},
+			"School of Fish": {
+				"Rarity":"Mystical",
+				"Box":"Unknown",
+				"dropRate":"Awarded"
 			}
 		},
 		"Sell Prices": {
@@ -856,7 +861,8 @@ blookData = {
 			"Master Elf":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/masterElf.svg",
 			"Agent Owl":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/agentOwl.svg",
 			"Phantom King":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/td/phantomKing.svg",
-			"Lovely Frog":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/aquatic/lovelyFrog.svg"
+			"Lovely Frog":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/aquatic/lovelyFrog.svg",
+			"School of Fish":"https://blooket.s3.us-east-2.amazonaws.com/blooks/bonus/other/schoolOfFish.svg"
 		},
 		"Colors": {
 			"Common": "rgb(255, 255, 255)",
