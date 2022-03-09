@@ -3,3 +3,4 @@ js/unobfuscated
 local
 local/*
 __pycache__
+extension.pem
