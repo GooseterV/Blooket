@@ -83,10 +83,10 @@ Object.keys(f).forEach( async (b) => {f[b].e.addEventListener("click", async () 
 		target: {
 			tabId: tab.id
 		},
-		function: async ()=> {
-			await (f[b].f)();
-			console.log(`%cRan function ${f[b].f}`, `color: #ff1975;`);
-		},
+		function: //async ()=> {
+			await (f[b].f)(),
+			//console.log(`%cRan function ${f[b].f}`, `color: #ff1975;`);
+		//},
 	});
 } ); } );
 
