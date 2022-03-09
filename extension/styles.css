@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Nunito:wght@200;400&display=swap');
+
+button {
+	height: 50px;
+	outline: none;
+	margin: 10px;
+	border: 10px;
+	border-radius: 10px;
+	width:200px;
+	background-color: rgba(255, 160, 250, 0.63);
+	font-family:'JetBrains Mono';
+	font-weight:500;
+}
+
+button.current {
+	box-shadow: 0 0 0 2px white,
+				0 0 0 4px black;
+}
+
+button:hover {
+	cursor:pointer;
+}
