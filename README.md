@@ -1,3 +1,8 @@
+# **IMPORTANT**
+## X-Blooket-Build Key : `3c727d84-6cf7-494b-8b77-2917571dbf48`
+This key is required for all the import scripts, simply paste it when it asks for it.
+If the key is outdated, please request it to be updated immediately so i can update it.
+
 # **NOTICE**
 #### Blooket has started to take action on accounts that spam the api too fast. 
 #### If you are worried about anything happening to your account while using these, read this section and the FAQ.
