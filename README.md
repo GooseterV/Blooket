@@ -19,13 +19,6 @@ If the key is outdated, please request it to be updated immediately so i can upd
 - Check for any mistakes you may have made 
 - If you are certain it is a problem with the code, go to the [**`Issues`**](https://github.com/GooseterV/Blooket/issues/new) tab of the repo and create a new issue
 
-## YouTubers 
-
-**Check out the below youtubers for cool Blooket content, and info on some of these scripts!**
-
-- [**Blooket God YT**](https://www.youtube.com/c/BlooketGod)
-- [**Blooket Is Life YT**](https://www.youtube.com/c/BlooketIsLife)
-- [**Comic Crew INC**](https://www.youtube.com/c/ComicCrewInc)
 
 ## Faq
 
