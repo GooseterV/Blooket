@@ -3,12 +3,9 @@
 This key is required for all the import scripts, simply paste it when it asks for it.
 If the key is outdated, please request it to be updated immediately so i can update it.
 
-# **NOTICE**
-#### Blooket has started to take action on accounts that spam the api too fast. 
-#### If you are worried about anything happening to your account while using these, read this section and the FAQ.
-#### As long as you are using them only as they're meant to be used you will not be suspended.
-#### I have gotten confirmation that none of these will disable your account, so do not worry
-#### [Blooket Terms of Service](https://www.blooket.com/terms)
+# **Info**
+**As of 5/7/22, `blookInfoExtender.js` will not be updated further. Remaining code will stay in this repository and remain unchanged. For information on Blooks please refer to the [official fandom wiki](https://blooket.fandom.com/Blooket_Wiki).**
+**In addition to this, the python section will be marked as outdated seeing as it is no longer possible to do certain things with python, and therefore eradicating it's use. It will remain unchanged, if it works, it will continue to work until it becomes unuseable.**
 </br>
 
 ##  ALL GUIDE CONTENT HAS BEEN MOVED [TO THE WIKI](https://github.com/GooseterV/Blooket/wiki/)
@@ -19,13 +16,6 @@ If the key is outdated, please request it to be updated immediately so i can upd
 - Check for any mistakes you may have made 
 - If you are certain it is a problem with the code, go to the [**`Issues`**](https://github.com/GooseterV/Blooket/issues/new) tab of the repo and create a new issue
 
-## YouTubers 
-
-**Check out the below youtubers for cool Blooket content, and info on some of these scripts!**
-
-- [**Blooket God YT**](https://www.youtube.com/c/BlooketGod)
-- [**Blooket Is Life YT**](https://www.youtube.com/c/BlooketIsLife)
-- [**Comic Crew INC**](https://www.youtube.com/c/ComicCrewInc)
 
 ## Faq
 

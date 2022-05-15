@@ -1,8 +1,8 @@
 # **TODO**
 
 ## Viewing
-- Add advanced marketplace view</br>
- `↪` Info on every box, viewable daily drops
+- Foo </br>
+ `↪` Bar
 ## Data Exporting/Importing
 - Foo </br>
  `↪` Bar
