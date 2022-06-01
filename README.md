@@ -1,5 +1,5 @@
 # **IMPORTANT**
-## X-Blooket-Build Key : `ac068bf9-d7a3-4616-b261-f79ec527d6cb`
+## X-Blooket-Build Key : `25645795-a202-4d49-a644-8811646a3f97`
 This key is required for all the import scripts, simply paste it when it asks for it.
 If the key is outdated, please request it to be updated immediately so i can update it.
 
