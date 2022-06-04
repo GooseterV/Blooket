@@ -8,6 +8,10 @@ If the key is outdated, please request it to be updated immediately so i can upd
 **In addition to this, the python section will be marked as outdated seeing as it is no longer possible to do certain things with python, and therefore eradicating it's use. It will remain unchanged, if it works, it will continue to work until it becomes unuseable.**
 </br>
 
+**As of 6/4/22, `extendStats.js` is discontinued.**
+
+</br>
+
 ##  ALL GUIDE CONTENT HAS BEEN MOVED [TO THE WIKI](https://github.com/GooseterV/Blooket/wiki/)
 
 

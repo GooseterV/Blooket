@@ -2,5 +2,6 @@
 	"files.autoSave": "afterDelay",
 	"editor.fontSize": 13,
 	"editor.fontFamily": "'JetBrains Mono Medium', monospace",
+	"debug.console.fontFamily": "Ubuntu Mono",
 	"diffEditor.maxFileSize": 75
 }
