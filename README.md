@@ -1,7 +1,4 @@
 # **IMPORTANT**
-## X-Blooket-Build Key : `25645795-a202-4d49-a644-8811646a3f97`
-This key is required for all the import scripts, simply paste it when it asks for it.
-If the key is outdated, please request it to be updated immediately so i can update it.
 
 # **Info**
 **As of 5/7/22, `blookInfoExtender.js` will not be updated further. Remaining code will stay in this repository and remain unchanged. For information on Blooks please refer to the [official fandom wiki](https://blooket.fandom.com/Blooket_Wiki).**
