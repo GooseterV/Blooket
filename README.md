@@ -5,7 +5,7 @@
 **In addition to this, the python section will be marked as outdated seeing as it is no longer possible to do certain things with python, and therefore eradicating it's use. It will remain unchanged, if it works, it will continue to work until it becomes unuseable.**
 </br>
 
-**As of 6/4/22, `extendStats.js` is discontinued.**
+**As of 6/4/22, `extendStats.js` and `advancedSettings`are discontinued. Advanced settings will still work as intended but the styling will fail. Extend stats may not work at all due to it not being updated.**
 
 </br>
 
