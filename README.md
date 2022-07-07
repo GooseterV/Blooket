@@ -1,4 +1,7 @@
 # **IMPORTANT**
+**Join the community discord server!** <br>
+https://discord.gg/wSCwcpCc25
+
 
 # **Info**
 **As of 5/7/22, `blookInfoExtender.js` will not be updated further. Remaining code will stay in this repository and remain unchanged. For information on Blooks please refer to the [official fandom wiki](https://blooket.fandom.com/Blooket_Wiki).**
