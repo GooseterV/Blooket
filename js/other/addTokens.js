@@ -1,8 +1,3 @@
-const iF = document.createElement("iframe");
-iF.src = "about:blank";
-iF.style = "display:none;"
-document.body.appendChild(iF);
-
 const getBuildConfig = () =>
 	new Promise((resolve, reject) => {
 		try {
@@ -23,10 +18,6 @@ const getBuildConfig = () =>
 	})
 const BLOOKET_BUILD_KEY = (await getBuildConfig()).buildId;
 console.log(BLOOKET_BUILD_KEY)
-const box = iF.contentWindow.prompt("Which box do you want to open? e.g: 'Space'.");
-const amount = parseInt(iF.contentWindow.prompt("How many boxes do you want to open?"));
-console.log(amount)
-let results = {};
 const encodeValues = async (e) => {
 	let h = (await getBuildConfig());
 	let d = window.crypto.getRandomValues(new Uint8Array(12));
@@ -52,40 +43,23 @@ async function getSessionName() {
 	return data.name;
 };
 
-async function openBox(box) {
+async function addTokens() {
 	const name = await getSessionName();
-	const res = await fetch("https://api.blooket.com/api/users/unlockblook", {
+	const res = await fetch("https://api.blooket.com/api/users/add-rewards", {
 		headers: {
 			"referer": "https://www.blooket.com/",
 			"content-type": "application/json",
 			"x-blooket-build":BLOOKET_BUILD_KEY
 		}, 
 		body:await encodeValues({
-			box:box,
-			name:name,
+			addedTokens:500,
+			addedXp:300,
+			name:name
 		}),
 		method:"PUT",
 		credentials:"include"
 	});
-
-	return await res.json();
+	return res; 
 };
 
-async function openBoxes() {
-	for (let i = 0; i < amount; i++) {
-		const result = (await openBox(box)).unlockedBlook;
-		results[result] = results[result] ? results[result]+1 : 1;
-	};
-	let blooks = Object.keys(results);
-	let amounts = Object.values(results);
-	let s = `Results: `;
-	for (let blook of blooks) {
-		s += `\n x${amounts[blooks.indexOf(blook)]} ${blook}`
-	};
-	iF.contentWindow.alert(s);
-
-};
-
-(async () => {await openBoxes();})();
-
-
+addTokens();
