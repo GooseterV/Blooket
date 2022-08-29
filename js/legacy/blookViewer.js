@@ -822,6 +822,7 @@ const blookInfo = {
 	}
 };
 
+
 const blookUrls = {
 	"Witch": "https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/witch.svg",
 	"Wizard": "https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/wizard.svg",
@@ -947,7 +948,6 @@ const blookUrls = {
 
 
 };
-
 const commonBlooks = {
 	"Chick": "https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/chick.svg",
 	"Chicken": "https://blooket.s3.us-east-2.amazonaws.com/blooks/farmAnimals/chicken.svg",
@@ -991,7 +991,16 @@ const commonBlooks = {
 	"Seal": "https://blooket.s3.us-east-2.amazonaws.com/blooks/arcticAnimals/seal.svg",
 	"Walrus": "https://blooket.s3.us-east-2.amazonaws.com/blooks/arcticAnimals/walrus.svg",
 };
-
+const commonBlooksArray = ['Chick', 'Chicken', 'Cow', 'Goat', 'Horse', 'Pig', 'Sheep', 'Duck', 'Dog', 'Cat', 'Rabbit', 'Goldfish', 'Hamster', 'Turtle', 'Kitten', 'Puppy', 'Bear', 'Moose', 'Fox', 'Raccoon', 'Squirrel', 'Owl', 'Hedgehog', 'Tiger', 'Orangutan', 'Cockatoo', 'Parrot', 'Anaconda', 'Jaguar', 'Macaw', 'Toucan', 'Panther', 'Capuchin', 'Snowy Owl', 'Polar Bear', 'Arctic Fox', 'Baby Penguin', 'Penguin', 'Arctic Hare', 'Seal', 'Walrus']
+const rarityColors = {
+	"Common": "rgb(255, 255, 255)",
+	"Uncommon": "rgb(75, 194, 46)",
+	"Rare": "rgb(10, 20, 250)",
+	"Epic": "rgb(190, 0, 0)",
+	"Legendary": "rgb(255, 145, 15)",
+	"Chroma": "rgb(0, 204, 255)",
+	"Mystical": "#a335ee"
+};
 const iF = document.createElement("iframe");
 iF.src = "about:blank";
 iF.style = "display:none;"
@@ -1048,14 +1057,18 @@ function Hook(objectName, dataLink, thisLink) {
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 async function seeBlooksFunc(user) {
 	let totalValue = 0;
+	//let s = document.createElement("script");
+	//s.src = "https://res.cloudinary.com/dkuqmpvbo/raw/upload/v1638227085/blookClickFunctions.js";
+	//document.body.appendChild(s);
 	const userBlooks = await getBlooks(user);
 	const blookKeys = Object.keys(userBlooks["unlocks"]);
-	Hook('blookData', 'blooks', 'blooksThisKeyword');
+	Hook('allBlooks', 'blooks', 'blooksThisKeyword');
 	blookKeys.sort(function (a, b) {
 		return Object.keys(blookUrls).indexOf(a) - Object.keys(blookUrls).indexOf(b);
 	});
 	await sleep(250);
-	document.getElementById("app").firstElementChild.firstElementChild.lastElementChild.children[1].firstElementChild.firstElementChild.lastElementChild.firstElementChild.click();
+	document.getElementsByClassName("styles__blookArrayContainer___HZVQe-camelCase")[0].firstElementChild.click();
+	data.blooksThisKeyword.blooks = commonBlooksArray.concat(blookKeys);
 	data.blooksThisKeyword.blookData = userBlooks.unlocks;
 	for (let blook of blookKeys) {
 		let sellPrice;
@@ -1071,8 +1084,135 @@ async function seeBlooksFunc(user) {
 		};
 		totalValue += userBlooks["unlocks"][blook] * (sellPrice);
 	};
-	
+	/*const blookContainer = document.getElementsByClassName("styles__blookArrayContainer___1hHMg-camelCase")[0];
+	blookContainer.innerHTML = "";
+	document.getElementsByClassName("styles__headerButtonContainer___2_WKL-camelCase")[0].remove();
+	const comBlookKeys = Object.keys(commonBlooks);
+	for (const comBlookNum in comBlookKeys) {
+		const blook = comBlookKeys[comBlookNum];
+		const blookUrl = commonBlooks[blook];
+		const blookName = blook;
+		const blookHtml = `<button
+		role="button" tabindex="0" style="width: 5vw; height: 5.75vw; font-size: 0px; outline: none; user-select: none; margin: 10px 1vw; position: relative; border: none; backface-visibility: hidden; background-color: transparent;">
+		<div class="styles__blookContainer___GKC0D-camelCase commonBlook"
+			data-url="${blookUrl}"
+			data-name="${blookName}"
+			style="z-index: 1; margin: 0px auto; width: 5vw; height: 5.75vw; cursor: pointer; position: relative; outline: none;">
+			<img src="${blookUrl}" alt="${blookName} Blook" draggable="false" class="styles__blook___2Yq1S-camelCase"></div>
+		</button>`;
+		blookContainer.innerHTML += blookHtml;
+	};
+	let lockedHtml = ``;
+	for (const blookNum in Object.keys(blookUrls)) {
+		const blook = Object.keys(blookUrls)[blookNum];
+		const blookUrl = blookUrls[blook];
+		const blookName = blook;
+		if (blookKeys.includes(blook)) {
+
+			const blookAmount = userBlooks["unlocks"][blook];
+			const rarity = blookInfo["Blooks"][blook]["Rarity"];
+			let sellPrice; 
+			if (blookName === "Megalodon") {sellPrice = 250;}
+			else if (blookName === "Snowman") {sellPrice = 75;}
+			else if (blookName === "Master Elf") {sellPrice = 350;}
+			else {sellPrice = blookInfo["Sell Prices"][rarity];};
+			const rarityColor = rarityColors[rarity];
+			const blookHtml = `<button
+			role="button" tabindex="0" style="width: 5vw; height: 5.75vw; font-size: 0px; outline: none; user-select: none; margin: 10px 1vw; position: relative; border: none; backface-visibility: hidden; background-color: transparent;">
+			<div class="styles__blookContainer___GKC0D-camelCase normalBlook"
+				data-url="${blookUrl}"
+				data-name="${blookName}"
+				data-price="${sellPrice}"
+				data-amount="${blookAmount}"
+				data-rarity="${rarity}"
+				data-raritycolor="${rarityColor}"
+				style="z-index: 1; margin: 0px auto; width: 5vw; height: 5.75vw; cursor: pointer; position: relative; outline: none;">
+				<img src="${blookUrl}" alt="${blookName} Blook" draggable="false" class="styles__blook___2Yq1S-camelCase"></div>
+			</button>`;
+			blookContainer.innerHTML += blookHtml;
+		} else if (!(blookKeys.includes(blook))) {
+			let lHtml = `
+			<div role="button" tabindex="0"
+			style="font-size: 0px; outline: none; user-select: none; margin: 10px 1.3vw; position: relative;">
+			<div class="styles__blookContainer___GKC0D-camelCase"
+				style="z-index: 1; margin: 0.3vw auto 0.345vw; width: 4.4vw; height: 5.06vw; cursor: auto; position: relative; outline: none;">
+				<img src="${blookUrl}" alt="${blookName} Blook"
+					draggable="false" class="styles__blook___2Yq1S-camelCase"></div>
+			<div>
+				<div class="styles__shaded___2L9TI-camelCase" style="width: 5vw; height: 5.75vw;"><i
+					class="fas fa-lock styles__lockIcon___1rXW4-camelCase" aria-hidden="true" style="font-size: 2.3vw;"></i>
+				</div>
+			</div>
+			</div>
+			`;
+			lockedHtml += lHtml;
+		};
+	};
+	blookContainer.innerHTML += lockedHtml;
+	document.getElementsByClassName('styles__priceContainer___2FFot-camelCase')[0].lastElementChild.remove();
+	function blookClick(blookUrl, sellPrice, blookAmount, rarity, rarityColor, blookName) {
+		//
+
+		document.getElementsByClassName(`styles__blook___2Yq1S-camelCase`)[0].src = `${blookUrl}`;
+		document.getElementsByClassName(`styles__priceContainer___2FFot-camelCase`)[0].children[0].innerText = `Sell Price: ${sellPrice}`;
+		document.getElementsByClassName(`styles__token___3r_ko-camelCase`)[0].style = ``;
+		document.getElementsByClassName(`styles__quantityText___3iYfi-camelCase`)[0].innerText = `Quantity: ${blookAmount}`;
+		document.getElementsByClassName(`styles__rarityText___1pi5f-camelCase`)[0].innerText = `${rarity}`;
+		document.getElementsByClassName(`styles__rarityText___1pi5f-camelCase`)[0].style = `color: ${rarityColor};`;
+		document.getElementsByClassName(`styles__headerTextContainer___2excW-camelCase`)[0].children[0].innerText = `${blookName}`;
+	};
+
+	function comBlookClick(blookUrl, blookName) {
+		//
+
+		document.getElementsByClassName(`styles__blook___2Yq1S-camelCase`)[0].src = `${blookUrl}`;
+		document.getElementsByClassName(`styles__priceContainer___2FFot-camelCase`)[0].children[0].innerText = `Cannot Be Sold`;
+		document.getElementsByClassName(`styles__quantityText___3iYfi-camelCase`)[0].innerText = ``;
+		document.getElementsByClassName(`styles__rarityText___1pi5f-camelCase`)[0].innerText = `Common`;
+		document.getElementsByClassName(`styles__rarityText___1pi5f-camelCase`)[0].style = `color: rgb(255, 255, 255);`;
+		document.getElementsByClassName(`styles__headerTextContainer___2excW-camelCase`)[0].children[0].innerText = `${blookName}`;
+		document.getElementsByClassName(`styles__token___3r_ko-camelCase`)[0].style = `display: none;`
+	};
+	let htmlBlooks = document.getElementsByClassName("normalBlook");
+	let htmlCommonBlooks = document.getElementsByClassName("commonBlook");
+	for (let blook of htmlBlooks) {
+		blook.addEventListener("click", function () {
+			blookClick(
+				blook.getAttribute("data-url"),
+				blook.getAttribute("data-price"),
+				blook.getAttribute("data-amount"),
+				blook.getAttribute("data-rarity"),
+				blook.getAttribute("data-raritycolor"),
+				blook.getAttribute("data-name")
+			);
+		});
+	};
+
+	for (let blook of htmlCommonBlooks) {
+		blook.addEventListener("click", function () {
+			comBlookClick(
+				blook.getAttribute("data-url"),
+				blook.getAttribute("data-name")
+			);
+		});
+	};*/
 	iF.contentWindow.alert(`Total Value of ${userName}'s Blooks: ${totalValue}`);
 	iF.contentWindow.alert("Please click on a blook to update the page.");
 };
+/*
+let styles = document.getElementsByTagName("style");
+let lastStyle = styles[styles.length - 1];
+lastStyle.innerText += `
+.spookyghost{animation:spookyghost 4s linear 0s infinite;}
+@keyframes spookyghost {
+	0%{transform:translateY(0);}
+	50%{transform:translateY(-7.5%);}
+	100%{transform:translateY(0);}
+}`;
+
+lastStyle.innerText += `
+button:hover {
+	cursor:pointer !important;
+}
+`;*/
 seeBlooksFunc(userName);

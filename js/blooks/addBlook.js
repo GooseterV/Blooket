@@ -44,9 +44,8 @@ iF.style = "display:none;"
 document.body.appendChild(iF);
 const blookName = iF.contentWindow.prompt("What's the name of the blook? (must exist)");
 const blookAmount =  iF.contentWindow.prompt("How many do you want?");
-Hook('allBlooks', 'blooks', 'blooksThisKeyword');
+Hook('blookData', 'blooks', 'blooksThisKeyword');
 await sleep(250);
-document.getElementById("app").firstElementChild.firstElementChild.lastElementChild.lastElementChild.firstElementChild.firstElementChild.click();
-data.blooksThisKeyword.blooks.push(blookName);
+document.getElementById("app").firstElementChild.firstElementChild.lastElementChild.children[1].firstElementChild.firstElementChild.lastElementChild.firstElementChild.click();
 data.blooksThisKeyword.blookData[blookName] = parseInt(blookAmount);
 iF.contentWindow.alert("Please click on a blook to update the page.");

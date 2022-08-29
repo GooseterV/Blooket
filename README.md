@@ -1,6 +1,6 @@
 # **IMPORTANT**
 **Join the community discord server!** <br>
-https://discord.gg/wSCwcpCc25
+https://discord.gg/awp325mMNz
 
 
 # **Info**

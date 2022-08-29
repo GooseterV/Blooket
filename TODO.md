@@ -1,11 +1,6 @@
 # **TODO**
 
-## Viewing
-- Foo </br>
- `↪` Bar
-## Data Exporting/Importing
-- Foo </br>
- `↪` Bar
+
 ## Tools
 - Teacher Tools</br>
  `↪` Stats page replaced with interactive tools for teachers
