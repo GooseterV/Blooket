@@ -10,12 +10,12 @@ const getBuildConfig = () =>
 			resolve({
 				buildId: buildConfig.match(/\w{8}-\w{4}-\w{4}-\w{4}-\w{12}/)[0],
 				secret: buildConfig.match(/\(new TextEncoder\)\.encode\(\"(.+?)\"\)/)[1]
-			}) 
+			});
 		} catch (err) {
-			console.log(err)
-			reject(false)
-		}
-	})
+			console.log(err);
+			reject(false);
+		};
+	});
 const BLOOKET_BUILD_KEY = (await getBuildConfig()).buildId;
 console.log(BLOOKET_BUILD_KEY)
 const encodeValues = async (e) => {
