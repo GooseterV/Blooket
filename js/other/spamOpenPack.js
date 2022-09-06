@@ -15,14 +15,14 @@ const getBuildConfig = () =>
 			resolve({
 				buildId: buildConfig.match(/\w{8}-\w{4}-\w{4}-\w{4}-\w{12}/)[0],
 				secret: buildConfig.match(/\(new TextEncoder\)\.encode\(\"(.+?)\"\)/)[1]
-			}) 
+			});
 		} catch (err) {
-			console.log(err)
-			reject(false)
-		}
-	})
+			console.log(err);
+			reject(false);
+		};
+	});
 const BLOOKET_BUILD_KEY = (await getBuildConfig()).buildId;
-console.log(BLOOKET_BUILD_KEY)
+console.log(BLOOKET_BUILD_KEY);
 const box = iF.contentWindow.prompt("Which box do you want to open? e.g: 'Space'.");
 const amount = parseInt(iF.contentWindow.prompt("How many boxes do you want to open?"));
 console.log(amount)
