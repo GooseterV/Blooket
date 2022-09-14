@@ -5,7 +5,7 @@
 
   reactHandler().stateNode.setState({ isPro: true });
 
-  const plusboxes = Array.from(document.getElementsByClassName('styles__modeContainer___2ByMM-camelCase'));
+  const plusboxes = Array.from(document.getElementsByClassName('styles__plusOnly___2z_Jj-camelCase'));
 
   plusboxes.forEach(plusbox => {
     plusbox.remove();
