@@ -74,6 +74,7 @@ async function openBox(box) {
 async function openBoxes() {
 	for (let i = 0; i < amount; i++) {
 		const result = (await openBox(box)).unlockedBlook;
+		console.log(`Unlocked Blook: ${result}`);
 		results[result] = results[result] ? results[result]+1 : 1;
 	};
 	let blooks = Object.keys(results);
