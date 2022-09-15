@@ -51,9 +51,8 @@ async function getSessionName() {
 
 	return data.name;
 };
-
+const name = await getSessionName();
 async function openBox(box) {
-	const name = await getSessionName();
 	const res = await fetch("https://api.blooket.com/api/users/unlockblook", {
 		headers: {
 			"referer": "https://www.blooket.com/",
