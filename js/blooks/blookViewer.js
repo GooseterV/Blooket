@@ -822,6 +822,8 @@ const blookInfo = {
 	}
 };
 
+
+
 const blookUrls = {
 	"Witch": "https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/witch.svg",
 	"Wizard": "https://blooket.s3.us-east-2.amazonaws.com/blooks/medieval/wizard.svg",
@@ -1050,7 +1052,8 @@ async function seeBlooksFunc(user) {
 	let totalValue = 0;
 	const userBlooks = await getBlooks(user);
 	const blookKeys = Object.keys(userBlooks["unlocks"]);
-	Hook('blookData', 'blooks', 'blooksThisKeyword');
+	Hook('showFree', 'blooks', 'blooksThisKeyword');
+	console.log(userBlooks)
 	blookKeys.sort(function (a, b) {
 		return Object.keys(blookUrls).indexOf(a) - Object.keys(blookUrls).indexOf(b);
 	});
