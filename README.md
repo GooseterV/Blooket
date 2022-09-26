@@ -2,16 +2,6 @@
 **Join the community discord server!** <br>
 https://discord.gg/awp325mMNz
 
-
-# **Info**
-**As of 5/7/22, `blookInfoExtender.js` will not be updated further. Remaining code will stay in this repository and remain unchanged. For information on Blooks please refer to the [official fandom wiki](https://blooket.fandom.com/Blooket_Wiki).**
-**In addition to this, the python section will be marked as outdated seeing as it is no longer possible to do certain things with python, and therefore eradicating it's use. It will remain unchanged, if it works, it will continue to work until it becomes unuseable.**
-</br>
-
-**As of 6/4/22, `extendStats.js` and `advancedSettings`are discontinued. Advanced settings will still work as intended but the styling will fail. Extend stats may not work at all due to it not being updated.**
-
-</br>
-
 ##  ALL GUIDE CONTENT HAS BEEN MOVED [TO THE WIKI](https://github.com/GooseterV/Blooket/wiki/)
 
 
@@ -43,19 +33,9 @@ Q. Is this ever going to get taken down?
 A. Until I am required to by Blooket ToS this repo will stay public.
 </br>
 </br>
-Q. Can the python be run on any os?
-</br>
-A. The Python section has only been tested on Windows, Repl.it and IOS Pythonista3. It should work on Linux and other systems but it has not been tested.
-</br>
-</br>
 Q. When I use any of the Blook scripts, it always gets messed up and displays some info twice. How do i fix this?
 </br>
 A. Before running the script on the Blooks page, make sure you click on a non-common blook. This happens because the common blooks do not start with a sell price, messing things up.
-</br>
-</br>
-Q. Why is the code obfuscated?
-</br>
-A. I obfuscate the code for many reasons, many of them are to respect other blooket community developer's wishes, others are for my own reasons.
 </br>
 </br>
 Q. On the export scripts, it always says something goes wrong and fails to copy to clipboard.
