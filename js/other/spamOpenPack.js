@@ -39,25 +39,22 @@ const encodeValues = async (e) => {
 };
 
 async function getSessionName() {
-	const response = await fetch('https://api.blooket.com/api/users/verify-session', {
+	const response = await fetch('https://api.blooket.com/api/users', {
 		method: "GET",
 		headers: {
 			"accept": "application/json, text/plain, */*",
-			"accept-language": "en-US,en;q=0.9,ru;q=0.8",
 		},
 		credentials: "include"
 	});
 	const data = await response.json();
-
 	return data.name;
 };
 const name = await getSessionName();
-console.log(name)
 async function openBox(box) {
 	const res = await fetch("https://api.blooket.com/api/users/unlockblook", {
 		headers: {
 			"referer": "https://www.blooket.com/",
-			"content-type": "application/json",
+			"content-type":"text/plain",
 			"x-blooket-build":BLOOKET_BUILD_KEY
 		}, 
 		body:await encodeValues({
