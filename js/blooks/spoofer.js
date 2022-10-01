@@ -5,4 +5,4 @@ const allBlooks = ALL_BLOOKS.reduce((a,b)=> (a[b]=1,a),{});
 
 document.getElementById("app").firstElementChild.firstElementChild.lastElementChild.children[1].firstElementChild.firstElementChild.lastElementChild.firstElementChild.click();
 
-Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ blookData: allBlooks })
+Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ blookData: allBlooks });
