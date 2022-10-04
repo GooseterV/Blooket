@@ -1,51 +1,10 @@
-function Hook(objectName, dataLink, thisLink) {
-	Object.defineProperty(Object.prototype, objectName, {
-		get: function () {
-			Reflect.defineProperty(this, objectName, {
-				get: function () {
-					return data[dataLink];
-				},
-				set: function (d) {
-					data[dataLink] = d;
-				},
-				enumerable: true
-			});
-			if (thisLink) {
-				data[thisLink] = this;
-			}
-			return data[dataLink];
-		},
-		set: function (d) {
-			Reflect.defineProperty(this, objectName, {
-				get: function () {
-					return data[dataLink];
-				},
-				set: function (d) {
-					data[dataLink] = d;
-				},
-				enumerable: true
-			});
-			if (thisLink) {
-				data[thisLink] = this;
-			}
-			data[dataLink] = d;
-		}
-	})
-}
+/* addBlook.js */
 
-const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-let data = {
-
-};
 const iF = document.createElement("iframe");
 iF.src = "about:blank";
 iF.style = "display:none;"
 document.body.appendChild(iF);
 const blookName = iF.contentWindow.prompt("What's the name of the blook? (must exist)");
 const blookAmount =  iF.contentWindow.prompt("How many do you want?");
-Hook('blookData', 'blooks', 'blooksThisKeyword');
-await sleep(250);
-document.getElementById("app").firstElementChild.firstElementChild.lastElementChild.children[1].firstElementChild.firstElementChild.lastElementChild.firstElementChild.click();
-data.blooksThisKeyword.blookData[blookName] = parseInt(blookAmount);
-iF.contentWindow.alert("Please click on a blook to update the page.");
+Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.state.blookData[blookName] = parseInt(blookAmount)
+Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.forceUpdate()
