@@ -39,7 +39,7 @@ const encodeValues = async (e) => {
 };
 
 async function getSessionName() {
-	const response = await fetch('https://api.blooket.com/api/users', {
+	const response = await fetch('https://dashboard.blooket.com/api/users', {
 		method: "GET",
 		headers: {
 			"accept": "application/json, text/plain, */*",
@@ -51,7 +51,7 @@ async function getSessionName() {
 };
 const name = await getSessionName();
 async function openBox(box) {
-	const res = await fetch("https://api.blooket.com/api/users/unlockblook", {
+	const res = await fetch("https://dashboard.blooket.com/api/users/unlockblook", {
 		headers: {
 			"referer": "https://www.blooket.com/",
 			"content-type":"text/plain",
