@@ -4,7 +4,7 @@ iF.style = "display:none;"
 document.body.appendChild(iF);
 
 async function getInfo(blooketName) {
-	const response = await fetch('https://api.blooket.com/api/users?name=' + blooketName, {
+	const response = await fetch('https://dashboard.blooket.com/api/users?name=' + blooketName, {
 		headers: {
 			"referer": "https://www.blooket.com/",
 			"content-type": "application/json"
