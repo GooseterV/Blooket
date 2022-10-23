@@ -5,7 +5,7 @@ axios.get("https://dashboard.blooket.com/api/users/verify-session").then(d=>{
     window.alert = n.contentWindow.alert.bind(window);
     n.remove()
     try {
-        axios.put("https://dashboard.blooket.com/api/users/add-rewards",{name:d.data.name,addedTokens:500,addedXp:300});
+        axios.put("https://play.blooket.com/api/users/add-rewards",{name:d.data.name,addedTokens:500,addedXp:300});
         alert('Added Rewards!')
     } catch (err) {
         alert('An error occurred!')
