@@ -1,4 +1,5 @@
 # **IMPORTANT**
+## **ADDTOKENS MUST BE RAN ON PLAY.BLOOKET.COM NOW!**
 **Join the community discord server!** <br>
 https://discord.gg/awp325mMNz
 
