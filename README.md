@@ -15,35 +15,30 @@ https://discord.gg/awp325mMNz
 ## Faq
 
 Q. Will you make in game exploits?
-</br>
+<br>
 A. No, because that would be breaking Blooket ToS.
-</br>
-</br>
+<br>
+<br>
 Q. Will my account be suspended for using these?
-</br>
+<br>
 A. No, as long as you are not spamming the API or breaking ToS you will not be suspended.
-</br>
-</br>
+<br>
+<br>
 Q. Can I use this on android/ios and how do I?
-</br>
+<br>
 A. For IOS please view the IOS/Apple section of this file, for Android/Samsung/Google OS please view the bookmarklet section.
-</br>
-</br>
-Q. Is this ever going to get taken down?
-</br>
-A. Until I am required to by Blooket ToS this repo will stay public.
-</br>
-</br>
+<br>
+<br>
 Q. When I use any of the Blook scripts, it always gets messed up and displays some info twice. How do i fix this?
-</br>
+<br>
 A. Before running the script on the Blooks page, make sure you click on a non-common blook. This happens because the common blooks do not start with a sell price, messing things up.
-</br>
-</br>
+<br>
+<br>
 Q. On the export scripts, it always says something goes wrong and fails to copy to clipboard.
 </br>
 A. This is due to the mozilla clipboard api not being supported on safari, it currently detects anything wrong as an issue and will always download file.
-</br>
-</br>
+<br>
+<br>
 **If your question is not listed here anywhere, please feel free to ask in the q/a section of the discussions tab**
 
 
