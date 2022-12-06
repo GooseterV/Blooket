@@ -17,42 +17,6 @@ async function getBlooks(blooketName) {
 };
 const data = {};
 
-function Hook(objectName, dataLink, thisLink) {
-	Object.defineProperty(Object.prototype, objectName, {
-		get: function () {
-			Reflect.defineProperty(this, objectName, {
-				get: function () {
-					return data[dataLink];
-				},
-				set: function (d) {
-					data[dataLink] = d;
-				},
-				enumerable: true
-			});
-			if (thisLink) {
-				data[thisLink] = this;
-			}
-			return data[dataLink];
-		},
-		set: function (d) {
-			Reflect.defineProperty(this, objectName, {
-				get: function () {
-					return data[dataLink];
-				},
-				set: function (d) {
-					data[dataLink] = d;
-				},
-				enumerable: true
-			});
-			if (thisLink) {
-				data[thisLink] = this;
-			}
-			data[dataLink] = d;
-		}
-	})
-
-}
-
 function getWebpackCache(id=null) {
 	const c = window.webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache;
 	return !id?c:c[id];
@@ -104,13 +68,11 @@ async function seeBlooksFunc(user) {
 		return Object.keys(blookUrls).indexOf(a) - Object.keys(blookUrls).indexOf(b);
 	});
 	await sleep(250);
-	document.getElementById("app").firstElementChild.firstElementChild.lastElementChild.children[1].firstElementChild.firstElementChild.lastElementChild.firstElementChild.click();
-	data.blooksThisKeyword.blookData = userBlooks.unlocks;
+	Object.values(document.querySelector('#app > div > div'))[1].children[0]._owner.stateNode.setState({ blookData: userBlooks.unlocks })
 	for (let blook of blookKeys) {
 		totalValue += userBlooks["unlocks"][blook] * getBlookValue(blook);
 	};
 	
 	iF.contentWindow.alert(`Total Value of ${userName}'s Blooks: ${totalValue}`);
-	iF.contentWindow.alert("Please click on a blook to update the page.");
 };
 seeBlooksFunc(userName);
