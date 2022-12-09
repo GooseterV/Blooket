@@ -3,6 +3,11 @@ iF.src = "about:blank";
 iF.style = "display:none;"
 document.body.appendChild(iF);
 const userName = iF.contentWindow.prompt("Who is the user you want to see blooks on?\nMake sure you are on the blooks page (./blooks)");
+/**
+ * Function to check users blooks
+ * @param blooketName The user to check, their username
+ * @returns blook data of blooketName
+ */
 async function getBlooks(blooketName) {
 	const response = await fetch('https://dashboard.blooket.com/api/users?name=' + blooketName, {
 		headers: {
@@ -17,11 +22,21 @@ async function getBlooks(blooketName) {
 };
 const data = {};
 
+/**
+ * Function to load webPack (step 1)
+ * @param id Webpack Cache ID
+ * @returns webpack data
+ */
 function getWebpackCache(id=null) {
 	const c = window.webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache;
 	return !id?c:c[id];
 };
 
+/**
+ * Function to load webPack (step 2)
+ * @param query Webpack Cache Query
+ * @returns webpack data
+ */
 function searchWebpackFunctionCache(query="") {
 	return Object.values(getWebpackCache()).filter(
 		k=>k.exports?.a
@@ -30,6 +45,10 @@ function searchWebpackFunctionCache(query="") {
 	);
 };
 
+/**
+ * Function to load webPack (step 3)
+ * @returns webpack data
+ */
 function getWebpackObjectCache() {
 	return Object.values(getWebpackCache()).filter(
 		k => !(k.exports instanceof Function) 
@@ -39,29 +58,48 @@ function getWebpackObjectCache() {
 	);
 };
 
+/**
+ * Function to load webPack (step 4)
+ * @param key webpack object key
+ * @param nestedKey webpack nested key
+ * @returns webpack data
+ */
 function searchWebpackObjectCache(key="a", nestedKey=null) {
 	return getWebpackObjectCache().filter(
 		k => nestedKey ? k.exports?.[key]?.[nestedKey] : k.exports?.[key]
 	);
 };
 
+/**
+ * Function to search webPack data (step 1)
+ * @param cache Webpack Cache
+ * @param q Search query
+ * @returns webpack data
+ */
 function searchWebpackCache(cache, q="") {
 	return cache.filter(x=>x.exports.toString().includes(q));
 };
 
 
+/**
+ * Function to get a blook value
+ * @param blook blook name
+ * @returns blook price
+ */
 function getBlookValue(blook="") {
 	return searchWebpackFunctionCache(`return 20;`)[0].exports.a(blook);
 };
 
-
-
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+/**
+ * Function to use all functions and see user blook
+ * @param user blooket user
+ * @returns blook price
+ */
 async function seeBlooksFunc(user) {
 	let totalValue = 0;
 	const userBlooks = await getBlooks(user);
 	const blookKeys = Object.keys(userBlooks["unlocks"]);
-	Hook('showFree', 'blooks', 'blooksThisKeyword');
 	//console.log(userBlooks)
 	blookKeys.sort(function (a, b) {
 		let blookUrls = searchWebpackObjectCache("a", "Frog")[0].exports.a;
